@@ -5,13 +5,13 @@
 
 @layer base {
   h1 {
-    @apply text-[32px] font-bold leading-normal md:text-5xl;
+    @apply text-[32px] font-bold leading-normal lg:text-5xl lg:leading-normal;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply py-5 px-[17px] md:px-[51px] md:py-[23px] rounded-[40px] bg-blue text-center text-base;
+    @apply py-5 px-[17px] lg:px-[51px] lg:py-[23px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
   }
 }
 
