@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import './globals.css'
 import Image from 'next/image'
+import Burger from './components/ui/icons/burger'
 
-const manrope = Manrope({ subsets: ['latin'], weight: ["400", "500", "600", "700"]})
+const manrope = Manrope({ subsets: ['latin'], weight: ["400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
   title: 'Attivanse | Diseño web para Empresas',
@@ -19,16 +20,20 @@ export default function RootLayout({
   return (
     <html lang="en" className='text-white'>
       <body className={manrope.className}>
-        {/* el nav tiene mb-[-161] para estar sobre el header*/}
-        <div className='z-10 relative mb-[-161px] pt-[64px] flex pl-28 pr-40 justify-between'>
+
+        <nav className='z-10 w-full top-10 px-6 absolute flex items-center justify-between md:pl-28 md:pr-40 md:top-16'>
           <Image className='h-[46px] w-[240px]' width={240} height={46} alt='logo-attivanse' src="/img/attivanse-logo.png" />
-          <ul className='flex gap-10 text-lg font-medium'>
+          <button className='focus:outline-none md:hidden'>
+            <Burger />
+          </button>
+          <ul className='hidden gap-10 text-lg font-medium md:flex'>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#metodologia">Metodología</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
-        </div>
+        </nav>
+
         {children}
       </body>
     </html>

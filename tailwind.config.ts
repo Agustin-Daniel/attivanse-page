@@ -23,10 +23,8 @@ const config: Config = {
     // },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'header-img': "url('/img/header.png')"
+          'header-img-1920': "url('/img/header-1920.png')",
+          'header-img-768': "url('/img/header-768.png')"
       },
     },
   },
