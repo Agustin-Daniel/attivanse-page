@@ -3,6 +3,7 @@ import { Manrope } from 'next/font/google'
 import './globals.css'
 import Image from 'next/image'
 import Burger from './components/ui/icons/burger'
+import { Navbar } from './components/ui/Navbar'
 
 const manrope = Manrope({ subsets: ['latin'], weight: ["400", "500", "600", "700"] })
 
@@ -20,20 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='text-white'>
       <body className={manrope.className}>
-
-        <nav className='z-10 w-full top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16'>
-          <Image className='h-[46px] w-[240px]' width={240} height={46} alt='logo-attivanse' src="/img/attivanse-logo.png" />
-          <button className='focus:outline-none lg:hidden'>
-            <Burger />
-          </button>
-          <ul className='hidden gap-10 text-lg font-medium lg:flex'>
-            <li><a className='hover:underline' href="#servicios">Servicios</a></li>
-            <li><a className='hover:underline' href="#metodologia">Metodología</a></li>
-            <li><a className='hover:underline' href="#precios">Precios</a></li>
-            <li><a className='hover:underline' href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-
+        <Navbar />
         {children}
       </body>
     </html>
