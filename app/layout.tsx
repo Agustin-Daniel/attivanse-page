@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
-import './globals.css'
-import Image from 'next/image'
-import Burger from './components/ui/icons/burger'
 import { Navbar } from './components/ui/Navbar'
+import './globals.css'
 
 const manrope = Manrope({ subsets: ['latin'], weight: ["400", "500", "600", "700"] })
 
