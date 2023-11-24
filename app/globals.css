@@ -13,5 +13,8 @@
   .btn-primary {
     @apply py-5 px-[17px] lg:px-[51px] lg:py-[23px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
   }
+  .service-icon {
+    @apply rounded-[7px] bg-icon w-[33px] h-[34px] p-1;
+  }
 }
 

@@ -26,7 +26,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
           'header-img-1920': "url('/img/header-1920.png')",
-          'header-img-768': "url('/img/header-768.png')"
+          'header-img-768': "url('/img/header-768.png')",
+          'icon': 'linear-gradient(141deg, #186897 13.67%, #0F1920 87.37%)'
       },
     },
   },
