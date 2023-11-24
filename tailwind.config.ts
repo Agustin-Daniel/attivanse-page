@@ -27,7 +27,7 @@ const config: Config = {
       backgroundImage: {
           'header-img-1920': "url('/img/header-1920.png')",
           'header-img-768': "url('/img/header-768.png')",
-          'icon': 'linear-gradient(141deg, #186897 13.67%, #0F1920 87.37%)'
+          'icon': 'linear-gradient(141deg, #2970EC 38.52%, #141D2E 95.64%);'
       },
     },
   },

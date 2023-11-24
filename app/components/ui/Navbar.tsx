@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import BurgerSVG from './icons/BurgerSVG';
+import { BurgerSVG } from './icons';
 import { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 

@@ -2,7 +2,7 @@ import { SVGProps } from "react"
 
 
 
-const CodeSVG = (props: SVGProps<SVGSVGElement>) => (
+export const CodeSVG = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 40 30"
@@ -17,4 +17,3 @@ const CodeSVG = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-export default CodeSVG

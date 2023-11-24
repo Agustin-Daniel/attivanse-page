@@ -1,6 +1,6 @@
 import { SVGProps } from "react"
 
-const MegaphoneSVG = (props: SVGProps<SVGSVGElement>) => (
+export const MegaphoneSVG = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 37 41"
@@ -19,4 +19,4 @@ const MegaphoneSVG = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-export default MegaphoneSVG
+
