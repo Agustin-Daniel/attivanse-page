@@ -10,6 +10,15 @@
   h2 {
     @apply text-lg font-semibold leading-normal lg:text-[38px] lg:leading-normal;
   }
+  h3 {
+    @apply text-base font-bold leading-normal lg:text-2xl lg:leading-normal;
+  }
+  p {
+    @apply text-base font-normal leading-normal lg:text-lg lg:font-medium lg:leading-normal;
+  }
+  li {
+    @apply text-base font-normal leading-normal lg:text-lg lg:font-medium lg:leading-normal;
+  }
 }
 
 @layer components {
@@ -17,7 +26,7 @@
     @apply py-5 px-[17px] lg:px-[51px] lg:py-[23px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
   }
   .service-icon {
-    @apply rounded-[7px] bg-icon w-[33px] h-[34px] p-1;
+    @apply rounded-[7px] bg-icon w-[33px] h-[34px] p-2 lg:rounded-[13px] lg:w-[61px] lg:h-[63px] lg:p-4;
   }
 }
 

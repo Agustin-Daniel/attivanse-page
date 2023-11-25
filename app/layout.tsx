@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='text-white'>
+    <html lang="en" className='text-white scroll-smooth'>
       <body className={manrope.className}>
         <Navbar />
         {children}
