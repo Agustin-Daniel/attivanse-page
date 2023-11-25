@@ -16,7 +16,7 @@ const config: Config = {
     colors: {
       'blue': '#2970EC',
       'white': '#FFFFFF',
-      'black': '#000',
+      'black': '#0D0E12',
       'gray': '#171A21',
     },
     // fontFamily: {
