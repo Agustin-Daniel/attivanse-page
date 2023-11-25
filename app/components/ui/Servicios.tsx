@@ -4,17 +4,19 @@ import {PenSVG, CodeSVG, AddonsSVG, MegaphoneSVG, CheckSVG} from "./icons"
 export const Servicios = () => {
   return (
     <section className="flex flex-col bg-gray">
-        <h2>Servicios</h2>
-        <div>
-            <div><div className="service-icon"><PenSVG /></div><h3>Diseño</h3></div>
+        <h2 className="text-center mt-20 mb-8">Servicios</h2>
+        <div className="flex items-center flex-col gap-1">
+            <div className="flex gap-1 items-center"><div className="service-icon"><PenSVG /></div><h3>Diseño</h3></div>
             <Image src="/img/design.png" width={495} height={487} alt="design image" />
-            <p>Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
-            <ul>
-              <li><CheckSVG height={24} width={24} />Diseñador experto dedicado</li>
-              <li><CheckSVG height={24} width={24} />Diseño acorde a su marca</li>
-              <li><CheckSVG height={24} width={24} />Estudio de la competencia</li>
-              <li><CheckSVG height={24} width={24} />Description of the features</li>
-            </ul>
+            <div className="flex flex-col gap-3">
+              <p className="w-[301px]">Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
+              <ul className="">
+                <li className="flex gap-1"><CheckSVG height={24} width={24} />Diseñador experto dedicado</li>
+                <li className="flex gap-1"><CheckSVG height={24} width={24} />Diseño acorde a su marca</li>
+                <li className="flex gap-1"><CheckSVG height={24} width={24} />Estudio de la competencia</li>
+                <li className="flex gap-1"><CheckSVG height={24} width={24} />Description of the features</li>
+              </ul>
+            </div>
         </div>
         <div>
             <div><div className="service-icon"><CodeSVG /></div><h3>Tecnologia</h3></div>

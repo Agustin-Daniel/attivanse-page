@@ -7,6 +7,9 @@
   h1 {
     @apply text-[32px] font-bold leading-normal lg:text-5xl lg:leading-normal;
   }
+  h2 {
+    @apply text-lg font-semibold leading-normal lg:text-[38px] lg:leading-normal;
+  }
 }
 
 @layer components {
