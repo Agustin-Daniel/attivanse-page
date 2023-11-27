@@ -18,6 +18,8 @@ const config: Config = {
       'white': '#FFFFFF',
       'black': '#0D0E12',
       'gray': '#171A21',
+      'grayline': '#707070',
+      'coldgray': '#A6D0DD',
     },
     // fontFamily: {
     //   sans: ['Graphik', 'sans-serif'],

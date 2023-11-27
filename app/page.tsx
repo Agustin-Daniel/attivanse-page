@@ -1,5 +1,6 @@
 import { Servicios } from "./components/ui/Servicios";
 import { Header } from "./components/ui/Header";
+import { Metodologia } from "./components/Metodologia";
 
 export default function Home() {
 	return (
@@ -7,6 +8,7 @@ export default function Home() {
 			<div className="max-w-[1920px] w-full">
 				<Header />
 				<Servicios />
+				<Metodologia />
 			</div>
 		</main>
 	);
