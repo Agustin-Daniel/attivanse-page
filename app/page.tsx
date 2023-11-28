@@ -1,6 +1,6 @@
 import { Servicios } from "./components/ui/Servicios";
 import { Header } from "./components/ui/Header";
-import { Metodologia } from "./components/Metodologia";
+import { Metodologia } from "./components/ui/Metodologia";
 
 export default function Home() {
 	return (
