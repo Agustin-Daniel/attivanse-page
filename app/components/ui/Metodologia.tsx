@@ -24,19 +24,21 @@ export const Metodologia = () => {
 
 
   return (
-		<section className="bg-black pl-11 pr-8 pt-16 pb-96 lg:pr-0 lg:pl-0">
+		<section className="bg-black pl-8 pr-8 pt-16 pb-96 lg:pr-0 lg:pl-0">
 			<h2 className="pb-24 text-center">Metodología</h2>
 			<div>
 				<MetodologiaCard
 					icon={<PaperSVG />}
-					scrollNumber={3000}
+					// 3515
+					// 3992
+					scrollNumber={{desktop: 3000, mobile: 3515}}
 					scrollPosition={scrollPosition}
 					title={"Estudio de necesidades"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
 				/>
 				<MetodologiaCard
 					icon={<MonitorSVG />}
-					scrollNumber={3280}
+					scrollNumber={{desktop: 3280, mobile: 3992}}
 					scrollPosition={scrollPosition}
 					title={"Diseño"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
@@ -44,14 +46,14 @@ export const Metodologia = () => {
 				/>
 				<MetodologiaCard
 					icon={<PaperArrowsSVG />}
-					scrollNumber={3560}
+					scrollNumber={{desktop: 3560, mobile: 4495}}
 					scrollPosition={scrollPosition}
 					title={"Revisiones"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
 				/>
 				<MetodologiaCard
 					icon={<CodeMonitorSVG />}
-					scrollNumber={3840}
+					scrollNumber={{desktop: 3840, mobile: 4957}}
 					scrollPosition={scrollPosition}
 					title={"Fase de programación"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
@@ -59,14 +61,14 @@ export const Metodologia = () => {
 				/>
 				<MetodologiaCard
 					icon={<RefreshMonitorSVG />}
-					scrollNumber={4120}
+					scrollNumber={{desktop: 4120, mobile: 5447}}
 					scrollPosition={scrollPosition}
 					title={"Puesta en marcha"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
 				/>
 				<MetodologiaCard
 					icon={<MonitorPuzzleSVG />}
-					scrollNumber={4400}
+					scrollNumber={{desktop: 4400, mobile: 5927}}
 					scrollPosition={scrollPosition}
 					title={"Addons & Integración"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
