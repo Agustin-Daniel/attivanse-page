@@ -32,18 +32,24 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 
   return (
 		<div className={clsx(
-			"flex justify-center gap-16 pt-3",
+			"grid grid-cols-metodologia-card gap-4",
 			{
-				"flex-row-reverse": revert,
+				// "flex-row-reverse": revert,
 			},
 			)}>
 			<div className={clsx(
-				"flex w-[378px] mt-[-17px]",
+				"flex mt-[-17px]",
 				{
-					"justify-end": !revert,
+					"lg:col-[3/3]": revert,
+					"lg:justify-end": !revert,
 				}
 			)}>{icon}</div>
-			<div className="flex flex-col items-center gap-3">
+			<div className={clsx(
+				"flex flex-col items-center gap-3",
+				{
+					"lg:col-[2/2] lg:row-[1/1]": revert,
+				}
+			)}>
 				<motion.div
 					id="circle"
 					initial={{ opacity: 0 }}
@@ -99,13 +105,13 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 				)}
 			</div>
 			<div className={clsx(
-				"w-[378px]",
+				"flex flex-col gap-7",
 				{
-					"text-right": revert,
+					"lg:col-[1/1] lg:row-[1/1] lg:text-right lg:items-end": revert,
 				}
 			)}>
-				<h3 className="mb-[27px]">{title}</h3>
-				<p className="text-coldgray">{description}</p>
+				<h3>{title}</h3>
+				<p className="text-coldgray w-[378px]">{description}</p>
 			</div>
 		</div>
 	);
