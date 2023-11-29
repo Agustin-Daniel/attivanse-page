@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <nav className='z-10 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16'>
-        <Image className='lg:h-[46px] lg:w-[240px]' width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
+        <Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
         <button className='focus:outline-none lg:hidden'>
         <div onClick={() => setBurger(true)}><BurgerSVG /></div>
         </button>
@@ -35,7 +35,7 @@ export const Navbar = () => {
             burger &&
                 <motion.div {...animationPropsBurger} className='flex flex-col gap-10 bg-gray absolute pt-10 px-6 top-[-40px] left-0 h-[100vh] w-full md:px-12 lg:hidden'>
                 <div className='flex justify-between items-center'>
-                    <Image className='lg:h-[46px] lg:w-[240px]' width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
+                    <Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
                     <div onClick={() => setBurger(false)}><BurgerSVG /></div>
                 </div>
                 <ul className='flex flex-col text-lg font-medium'>
