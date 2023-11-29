@@ -32,7 +32,11 @@ const config: Config = {
           'icon': 'linear-gradient(141deg, #2970EC 38.52%, #141D2E 95.64%);'
       },
       gridTemplateColumns: {
-        'metodologia-card': '1fr min-content 1fr',
+        'fr-min-fr': '1fr min-content 1fr',
+        'min-min-content': 'min-content min-content',
+      },
+      gridTemplateRows: {
+        // 'metodologia-card': '1fr min-content 1fr',
       }
     },
   },

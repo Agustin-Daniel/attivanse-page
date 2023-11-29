@@ -24,7 +24,7 @@ export const Metodologia = () => {
 
 
   return (
-		<section className="bg-black pt-16 pb-96">
+		<section className="bg-black pl-11 pr-8 pt-16 pb-96 lg:pr-0 lg:pl-0">
 			<h2 className="pb-24 text-center">Metodología</h2>
 			<div>
 				<MetodologiaCard

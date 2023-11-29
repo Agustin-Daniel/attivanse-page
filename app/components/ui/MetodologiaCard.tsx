@@ -32,23 +32,19 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 
   return (
 		<div className={clsx(
-			"grid grid-cols-metodologia-card gap-4",
+			"grid grid-cols-min-min-content mt-3 gap-x-9 lg:gap-9 lg:flex justify-center",
 			{
-				// "flex-row-reverse": revert,
+				"flex-row-reverse": revert,
 			},
 			)}>
 			<div className={clsx(
-				"flex mt-[-17px]",
+				"flex lg:mt-[-17px] col-[2/2] row-[2/2] lg:w-full",
 				{
-					"lg:col-[3/3]": revert,
 					"lg:justify-end": !revert,
 				}
 			)}>{icon}</div>
 			<div className={clsx(
-				"flex flex-col items-center gap-3",
-				{
-					"lg:col-[2/2] lg:row-[1/1]": revert,
-				}
+				"flex flex-col items-center gap-3 col-[1/1] row-[1/3]",
 			)}>
 				<motion.div
 					id="circle"
@@ -91,10 +87,10 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 					>
-						<div id="line" className="h-[238px] w-[3px] bg-grayline"></div>
+						<div id="line" className="h-[308px] lg:h-[238px] w-[3px] bg-grayline"></div>
 						<div
 							id="line"
-							className="h-[238px] w-[3px] bg-blue absolute top-0 z-10"
+							className="h-[308px] lg:h-[238px] w-[3px] bg-blue absolute top-0 z-10"
 							style={{
 								transform: `scaleY(${scaleFactor})`,
 								transformOrigin: "top",
@@ -105,13 +101,13 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 				)}
 			</div>
 			<div className={clsx(
-				"flex flex-col gap-7",
+				"flex flex-col gap-6 lg:w-full",
 				{
-					"lg:col-[1/1] lg:row-[1/1] lg:text-right lg:items-end": revert,
+					"lg:text-right lg:items-end": revert,
 				}
 			)}>
 				<h3>{title}</h3>
-				<p className="text-coldgray w-[378px]">{description}</p>
+				<p className="text-coldgray mb-8 w-[60vw] max-w-[335px] lg:max-w-none lg:w-[378px]">{description}</p>
 			</div>
 		</div>
 	);
