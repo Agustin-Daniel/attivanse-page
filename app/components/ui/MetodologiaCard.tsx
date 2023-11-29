@@ -32,7 +32,7 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 
   return (
 		<div className={clsx(
-			"grid grid-cols-min-min-content mt-3 gap-x-9 lg:gap-9 lg:flex justify-center",
+			"grid grid-cols-min-min-content grid-rows-fr-fr-content mt-3 gap-x-9 lg:gap-9 lg:flex justify-center",
 			{
 				"flex-row-reverse": revert,
 			},
@@ -42,7 +42,8 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 				{
 					"lg:justify-end": !revert,
 				}
-			)}>{icon}</div>
+			)}><div className="w-[120px] lg:w-[141px] h-fit">{icon}</div>
+			</div>
 			<div className={clsx(
 				"flex flex-col items-center gap-3 col-[1/1] row-[1/3]",
 			)}>
@@ -101,7 +102,7 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 				)}
 			</div>
 			<div className={clsx(
-				"flex flex-col gap-6 lg:w-full",
+				"flex flex-col justify-end gap-6 lg:w-full lg:justify-start mt-3 lg:mt-0",
 				{
 					"lg:text-right lg:items-end": revert,
 				}

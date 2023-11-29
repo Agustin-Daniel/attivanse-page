@@ -3,8 +3,9 @@ import { SVGProps } from "react"
 export const MonitorSVG = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={142}
-    height={156}
+    viewBox="0 0 142 156"
+    width="100%"
+    height="auto"
     fill="none"
     {...props}
   >

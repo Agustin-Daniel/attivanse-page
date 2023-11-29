@@ -3,8 +3,9 @@ import { SVGProps } from "react"
 export const PaperArrowsSVG = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={141}
-    height={141}
+    viewBox="0 0 141 141"
+    width="100%"
+    height="auto"
     fill="none"
     {...props}
   >
