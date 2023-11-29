@@ -40,6 +40,7 @@ export const Metodologia = () => {
 					scrollPosition={scrollPosition}
 					title={"Diseño"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
+					revert
 				/>
 				<MetodologiaCard
 					icon={<PaperArrowsSVG />}
@@ -54,6 +55,7 @@ export const Metodologia = () => {
 					scrollPosition={scrollPosition}
 					title={"Fase de programación"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
+					revert
 				/>
 				<MetodologiaCard
 					icon={<RefreshMonitorSVG />}
@@ -69,6 +71,7 @@ export const Metodologia = () => {
 					title={"Addons & Integración"}
 					description={"Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. "}
 					lineOff
+					revert
 				/>
 			</div>
 		</section>

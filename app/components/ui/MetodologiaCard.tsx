@@ -2,6 +2,7 @@
 'use client'
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import clsx from 'clsx';
 
 type Prop = {
 	// `icon` es un elemento JSX que se renderiza como un icono en el componente.
@@ -16,9 +17,11 @@ type Prop = {
 	description:string,
 	 // `lineOff` quia la linea de la card.
 	lineOff?:boolean
+	 // `revert` cambia la orientacion.
+	revert?:boolean
 }
 
-export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, description, lineOff = false }: Prop) => {
+export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, description, lineOff = false, revert = false }: Prop) => {
 
 	const [scaleFactor, setScaleFactor] = useState(0)
 
@@ -28,8 +31,18 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 
 
   return (
-		<div className="flex justify-center gap-16 pt-3">
-			<div className="flex justify-end w-[378px] mt-[-17px]">{icon}</div>
+		<div className={clsx(
+			"flex justify-center gap-16 pt-3",
+			{
+				"flex-row-reverse": revert,
+			},
+			)}>
+			<div className={clsx(
+				"flex w-[378px] mt-[-17px]",
+				{
+					"justify-end": !revert,
+				}
+			)}>{icon}</div>
 			<div className="flex flex-col items-center gap-3">
 				<motion.div
 					id="circle"
@@ -85,7 +98,12 @@ export const MetodologiaCard = ({ icon, scrollNumber, scrollPosition, title, des
 					</motion.div>
 				)}
 			</div>
-			<div className="w-[378px]">
+			<div className={clsx(
+				"w-[378px]",
+				{
+					"text-right": revert,
+				}
+			)}>
 				<h3 className="mb-[27px]">{title}</h3>
 				<p className="text-coldgray">{description}</p>
 			</div>
