@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='text-white scroll-smooth'>
-      <body className={manrope.className}>
+      <body className={manrope.className} style={{maxWidth: "1920px"}}> 
         <Navbar />
         {children}
       </body>
