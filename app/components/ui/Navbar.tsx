@@ -16,6 +16,13 @@ export const Navbar = () => {
 		transition: { duration: 0.3 }
 	  } 
 
+      const links = [
+        { href: "#servicios", text: "Servicios" },
+        { href: "#metodologia", text: "Metodología" },
+        { href: "#precios", text: "Precios" },
+        { href: "#contacto", text: "Contacto" },
+      ];
+
   return (
     <nav className='z-10 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16'>
         <Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
@@ -23,30 +30,31 @@ export const Navbar = () => {
         <div onClick={() => setBurger(true)}><BurgerSVG /></div>
         </button>
         <ul className='hidden gap-10 text-lg font-medium lg:flex'>
-            <li><a className='hover:underline' href="#servicios">Servicios</a></li>
-            <li><a className='hover:underline' href="#metodologia">Metodología</a></li>
-            <li><a className='hover:underline' href="#precios">Precios</a></li>
-            <li><a className='hover:underline' href="#contacto">Contacto</a></li>
-        </ul>
-
+            {links.map((link, index) => (
+            <li key={index}>
+                <a className='hover:underline' href={link.href}>{link.text}</a>
+            </li>
+            ))}
+            </ul>
         {/* Mobile */}
         <AnimatePresence>
         {
             burger &&
-                <motion.div {...animationPropsBurger} className='flex flex-col gap-10 bg-gray absolute pt-10 px-6 top-[-40px] left-0 h-[100vh] w-full md:px-12 lg:hidden'>
+                <motion.div {...animationPropsBurger} className='flex fixed flex-col gap-10 bg-gray pt-10 px-6 top-0 left-0 h-[100vh] w-full md:px-12 lg:hidden'>
                 <div className='flex justify-between items-center'>
                     <Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
                     <div onClick={() => setBurger(false)}><BurgerSVG /></div>
                 </div>
                 <ul className='flex flex-col text-lg font-medium'>
-                    <li className='border-b-[1px] border-blue hover:text-blue'><a className='w-full block pt-4 pb-3' href="#servicios">Servicios</a></li>
-                    <li className='border-b-[1px] border-blue hover:text-blue'><a className='w-full block pt-4 pb-3' href="#metodologia">Metodología</a></li>
-                    <li className='border-b-[1px] border-blue hover:text-blue'><a className='w-full block pt-4 pb-3' href="#precios">Precios</a></li>
-                    <li className='border-b-[1px] border-blue hover:text-blue'><a className='w-full block pt-4 pb-3' href="#contacto">Contacto</a></li>
+                    {links.map((link, index) => (
+                    <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                        <a className='w-full block pt-4 pb-3' href={link.href}>{link.text}</a>
+                    </li>
+                    ))}
                 </ul>
                 </motion.div>
         }
-            </AnimatePresence>
+        </AnimatePresence>
     </nav>
   )
 }
