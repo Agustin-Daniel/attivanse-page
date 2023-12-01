@@ -1,6 +1,7 @@
 import { Servicios } from "./components/ui/Servicios";
 import { Header } from "./components/ui/Header";
 import { Metodologia } from "./components/ui/Metodologia";
+import { CasoDeEstudio } from "./components/CasoDeEstudio";
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 				<Header />
 				<Servicios />
 				<Metodologia />
+				<CasoDeEstudio />
 			</div>
 		</main>
 	);

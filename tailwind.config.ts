@@ -21,10 +21,6 @@ const config: Config = {
       'grayline': '#707070',
       'coldgray': '#A6D0DD',
     },
-    // fontFamily: {
-    //   sans: ['Graphik', 'sans-serif'],
-    //   serif: ['Merriweather', 'serif'],
-    // },
     extend: {
       backgroundImage: {
           'header-img-1920': "url('/img/header-1920.png')",
@@ -36,7 +32,6 @@ const config: Config = {
       },
       gridTemplateRows: {
         'fr-fr-content': '1fr 1fr',
-        // 'metodologia-card': '1fr min-content 1fr',
       }
     },
   },
