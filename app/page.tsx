@@ -1,7 +1,7 @@
 import { Servicios } from "./components/ui/Servicios";
 import { Header } from "./components/ui/Header";
 import { Metodologia } from "./components/ui/Metodologia";
-import { CasoDeEstudio } from "./components/CasoDeEstudio";
+import { CasoDeEstudio } from "./components/ui/CasoDeEstudio";
 
 export default function Home() {
 	return (
