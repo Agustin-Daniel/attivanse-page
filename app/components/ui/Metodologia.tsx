@@ -24,8 +24,8 @@ export const Metodologia = () => {
 
 
   return (
-		<section className="bg-black pl-8 pr-8 pt-16 pb-96 lg:pr-0 lg:pl-0">
-			<h2 className="pb-24 text-center">Metodología</h2>
+		<section className="bg-black px-8 pt-10 pb-12 lg:pt-16 lg:pb-52 lg:px-0">
+			<h2 className="pb-12 lg:pb-24 text-center">Metodología</h2>
 			<div>
 				<MetodologiaCard
 					icon={<PaperSVG />}
