@@ -29,8 +29,6 @@ export const Metodologia = () => {
 			<div>
 				<MetodologiaCard
 					icon={<PaperSVG />}
-					// 3515
-					// 3992
 					scrollNumber={{desktop: 3000, mobile: 3515}}
 					scrollPosition={scrollPosition}
 					title={"Estudio de necesidades"}

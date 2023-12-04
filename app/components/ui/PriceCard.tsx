@@ -19,7 +19,7 @@ export const PriceCard = ({title, img, price, description, features}: Prop) => {
         <h4  className='mb-3 text-blue'>{title}</h4>
         <p className='mb-9 w-fit text-center lg:text-base'>{description}</p>
         <div className='flex flex-col items-center w-[255px] justify-center rounded-[18px] border-coldgray border-[1px] mb-7 py-2'>
-            <span className='text-[38px] font-semibold leading-normal'>${price.base}</span>
+            <span className='text-[38px] font-bold leading-normal'>${price.base}</span>
             <span className='leading-normal text-lightwhite'>+ ${price.monthly} por mes</span>
         </div>
         <ul className="flex flex-col gap-4 w-fit">

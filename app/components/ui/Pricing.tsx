@@ -5,7 +5,7 @@ const cards = [
     {
         title:"Subtitle",
         img:"/img/price-img-1.png",
-        price: {base: "500", monthly: "50"},
+        price: {base: "299", monthly: "50"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",
@@ -16,7 +16,7 @@ const cards = [
     {
         title:"Subtitle",
         img:"/img/price-img-2.png",
-        price: {base: "500", monthly: "50"},
+        price: {base: "499", monthly: "50"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",
@@ -27,7 +27,7 @@ const cards = [
     {
         title:"Subtitle",
         img:"/img/price-img-3.png",
-        price: {base: "500", monthly: "50"},
+        price: {base: "799", monthly: "50"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",
