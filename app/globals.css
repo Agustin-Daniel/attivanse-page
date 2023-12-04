@@ -13,6 +13,9 @@
   h3 {
     @apply text-base font-bold leading-normal lg:text-2xl lg:leading-normal;
   }
+  h4 {
+    @apply text-[25px] font-medium leading-normal;
+  }
   p {
     @apply text-base font-normal leading-normal lg:text-lg lg:font-medium lg:leading-normal;
   }

@@ -1,7 +1,6 @@
 
 'use client'
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import clsx from 'clsx';
 
 type Prop = {
@@ -34,12 +33,6 @@ export const MetodologiaCard = ({
 	revert = false,
 }: Prop) => {
 
-
-	const [scaleFactor, setScaleFactor] = useState(0);
-
-	useEffect(() => {
-		setScaleFactor(scrollPosition > scrollNumber.desktop ? 1 : 0);
-	}, [scrollPosition, scrollNumber]);
 
 	return (
 		<div

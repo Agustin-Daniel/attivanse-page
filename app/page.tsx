@@ -2,6 +2,8 @@ import { Servicios } from "./components/ui/Servicios";
 import { Header } from "./components/ui/Header";
 import { Metodologia } from "./components/ui/Metodologia";
 import { CasoDeEstudio } from "./components/ui/CasoDeEstudio";
+import { Pricing } from "./components/ui/Pricing";
+import { Contact } from "./components/ui/Contact";
 
 export default function Home() {
 	return (
@@ -11,6 +13,8 @@ export default function Home() {
 				<Servicios />
 				<Metodologia />
 				<CasoDeEstudio />
+				<Pricing />
+				<Contact />
 			</div>
 		</main>
 	);
