@@ -1,8 +1,5 @@
 import clsx from 'clsx'
-import { Work_Sans } from 'next/font/google'
-
-
-const worksans = Work_Sans({ subsets: ['latin'], weight: ["400"] })
+import { worksans } from './fonts';
 
 
 export const Contact = () => {

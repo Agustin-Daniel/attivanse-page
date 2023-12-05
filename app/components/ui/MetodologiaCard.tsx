@@ -2,6 +2,7 @@
 'use client'
 import { motion } from "framer-motion";
 import clsx from 'clsx';
+import { worksans } from './fonts';
 
 type Prop = {
 	// `icon` es un elemento JSX que se renderiza como un icono en el componente.
@@ -149,7 +150,7 @@ export const MetodologiaCard = ({
 				)}
 			>
 				<h3>{title}</h3>
-				<p className="text-coldgray mb-8 w-[60vw] max-w-[335px] lg:max-w-none lg:w-[378px]">
+				<p className={clsx(worksans.className, "text-coldgray mb-8 w-[60vw] max-w-[335px] lg:max-w-none lg:w-[378px]")}>
 					{description}
 				</p>
 			</div>
