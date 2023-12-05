@@ -4,6 +4,7 @@ import { Metodologia } from "./components/ui/Metodologia";
 import { CasoDeEstudio } from "./components/ui/CasoDeEstudio";
 import { Pricing } from "./components/ui/Pricing";
 import { Contact } from "./components/ui/Contact";
+import { FAQ } from "./components/ui/FAQ";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 				<CasoDeEstudio />
 				<Pricing />
 				<Contact />
+				<FAQ />
 			</div>
 		</main>
 	);

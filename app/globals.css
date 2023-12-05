@@ -26,10 +26,22 @@
 
 @layer components {
   .btn-primary {
-    @apply py-5 px-[17px] lg:px-[51px] lg:py-[23px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
+    @apply min-w-[160px] w-fit px-[32px] py-[23px] lg:px-[51px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
+  }
+  .btn-secondary {
+    @apply min-w-[160px] w-fit px-[32px] py-[23px] lg:px-[51px] rounded-[40px] border-white border-[1px] text-center text-base hover:bg-blue hover:text-white hover:border-none;
   }
   .service-icon {
     @apply rounded-[7px] bg-icon w-[33px] h-[34px] p-2 lg:rounded-[13px] lg:w-[61px] lg:h-[63px] lg:p-4;
   }
 }
 
+/* 
+@keyframes move-background {
+  0% { background-position: -100% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.bg-contact-img {
+  animation: move-background 10s linear infinite;
+} */

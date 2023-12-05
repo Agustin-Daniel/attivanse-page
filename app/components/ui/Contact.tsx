@@ -1,6 +1,20 @@
+import clsx from 'clsx'
+import { Work_Sans } from 'next/font/google'
+
+
+const worksans = Work_Sans({ subsets: ['latin'], weight: ["400"] })
+
 
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="bg-lightblack py-16 bg-contact-mobile bg-right bg-no-repeat text-center flex flex-col items-center lg:py-28 lg:bg-contact-deskop">
+      <p className="mb-4 font-normal lg:mb-3 lg:font-medium">Comencemos</p>
+      <h4 className="mb-8 text-lg leading-normal lg:mb-[19px] lg:text-[38px]">Contame sobre tu proyecto</h4>
+      <p className={clsx(worksans.className, "mb-10 max-w-[344px] leading-6 lg:mb-12 lg:text-base lg:max-w-[386px]")}>Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i </p>
+      <div className='flex justify-center gap-2'>
+        <button className="btn-primary">Hablemos</button>
+        <button className="btn-secondary">Email</button>
+      </div>
+    </div>
   )
 }

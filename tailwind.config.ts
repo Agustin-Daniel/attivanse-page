@@ -21,6 +21,7 @@ const config: Config = {
       'white': '#FFFFFF',
       'lightwhite': '#FFFFFFC4',
       'black': '#0D0E12',
+      'lightblack': '#101217',
       'gray': '#171A21',
       'grayline': '#707070',
       'coldgray': '#A6D0DD',
@@ -30,6 +31,8 @@ const config: Config = {
           'header-img-1920': "url('/img/header-1920.png')",
           'header-img-768': "url('/img/header-768.png')",
           'header-img-480': "url('/img/header-480.png')",
+          'contact-mobile': "url('/img/contact-mobile.png')",
+          'contact-deskop': "url('/img/contact-deskop.png')",
           'icon': 'linear-gradient(141deg, #2970EC 38.52%, #141D2E 95.64%);'
       },
       gridTemplateColumns: {
