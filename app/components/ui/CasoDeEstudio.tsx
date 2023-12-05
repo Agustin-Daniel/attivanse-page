@@ -18,8 +18,8 @@ export const CasoDeEstudio = () => {
           <a className="text-blue underline" target="_blank" href="https://ciudaddemessina.com/">Visitar página</a>
         </div>
         <div className="flex gap-2 lg:gap-8">
-          <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/new-home.png" width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web" />
-          <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/old-home.png" width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web anterior" />
+          <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/new-home.png" quality={100} width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web" />
+          <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/old-home.png" quality={100} width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web anterior" />
         </div>
       </div>
     </div>
