@@ -5,6 +5,8 @@ import { CasoDeEstudio } from "./components/ui/CasoDeEstudio";
 import { Pricing } from "./components/ui/Pricing";
 import { Contact } from "./components/ui/Contact";
 import { FAQ } from "./components/ui/FAQ";
+import { Benefecios } from "./components/ui/Benefecios";
+import { Footer } from "./components/ui/Footer";
 
 export default function Home() {
 	return (
@@ -15,8 +17,10 @@ export default function Home() {
 				<Metodologia />
 				<CasoDeEstudio />
 				<Pricing />
+				<Benefecios />
 				<Contact />
 				<FAQ />
+				<Footer />
 			</div>
 		</main>
 	);
