@@ -63,7 +63,7 @@ export const Benefecios = () => {
 			<div className="container px-5 pb-24 mx-auto">
 				<div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
 					<h1 className="mb-2">
-						Beneficios de trabajar con nosotros
+						<strong className="text-[#FEBD29]">Beneficios</strong> de trabajar con nosotros
 					</h1>
 					<p className="lg:w-1/2 w-full leading-relaxed">
                         Su empresa se beneficiará de nuestra experiencia en el desarrollo de software
