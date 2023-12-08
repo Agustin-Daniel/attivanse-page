@@ -7,6 +7,9 @@ import { Contact } from "./components/ui/Contact";
 import { FAQ } from "./components/ui/FAQ";
 import { Benefecios } from "./components/ui/Benefecios";
 import { Footer } from "./components/ui/Footer";
+import { Tools } from "./components/ui/Tools";
+
+
 
 export default function Home() {
 	return (
@@ -14,6 +17,7 @@ export default function Home() {
 			<div className="max-w-[1920px] w-full">
 				<Header />
 				<Servicios />
+				<Tools />
 				<Metodologia />
 				<CasoDeEstudio />
 				<Pricing />

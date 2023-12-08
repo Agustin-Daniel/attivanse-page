@@ -32,6 +32,7 @@ const config: Config = {
       'gray': '#171A21',
       'grayline': '#707070',
       'coldgray': '#A6D0DD',
+      'transparent': 'transparent',
     },
     extend: {
       keyframes: {
