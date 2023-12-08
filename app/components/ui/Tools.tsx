@@ -59,6 +59,7 @@ export const Tools = () => {
                     loop={true}
                     autoplay={{
                         delay: 1000,
+                        disableOnInteraction: false,
                     }}
                     speed={2000}
                     freeMode={true}
