@@ -1,6 +1,9 @@
+"use client"
 import Image from "next/image";
-import { worksans } from "./fonts";
-import clsx from 'clsx';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
+import { useEffect, useState } from "react";
 
 export const Tools = () => {
 
@@ -35,6 +38,16 @@ export const Tools = () => {
         },
     ]
 
+    const [key, setKey] = useState(0);
+
+    useEffect(() => {
+    const handleResize = () => setKey(prevKey => prevKey + 1);
+    window.addEventListener('resize', handleResize);
+    console.log("xd");
+    return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
+
 
 	return (
 		<section className="text-gray-600 body-font bg-black pt-24">
@@ -48,13 +61,46 @@ export const Tools = () => {
 					</p>
 				</div>
 				<div className="flex flex-wrap justify-around -m-4 gap-20">
+                <Swiper
+                    key={key}
+                    modules={[Autoplay]}
+                    loop={true}
+                    autoplay={{
+                        delay: 1000,
+                    }}
+                    speed={2000}
+                    freeMode={true}
+                    spaceBetween={50}
+                    slidesPerView={2}
+                    breakpoints={{
+                        // when window width is >= 1024px
+                        1024: {
+                          slidesPerView: 5,
+                          spaceBetween: 50
+                        },
+                        // when window width is >= 768px
+                        768: {
+                          slidesPerView: 4,
+                          spaceBetween: 40
+                        },
+                        // when window width is >= 640px
+                        640: {
+                          slidesPerView: 3,
+                          spaceBetween: 20
+                        },
+                      }}
+                    >
                     {
                         cards.map((card, index) => (
-                            <div className="flex flex-col items-center" key={index}>
-                                <Image quality={100} width={148} height={148} src={card.image} alt={`${card.title}-icon`} />
-                            </div>
+                            <SwiperSlide key={index}>
+                                <div className="flex flex-col items-center">
+                                    <Image className="w-[100px] lg:w-[148px]" quality={100} width={148} height={148} src={card.image} alt={`${card.title}-icon`} />
+                                    <h3 className="mt-1 lg:text-base">{card.title}</h3>
+                                </div>
+                            </SwiperSlide>
                         ))
                     }
+                </Swiper>
 				</div>
 			</div>
 		</section>
