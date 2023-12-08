@@ -1,26 +1,12 @@
-'use client'
-import { useEffect, useState } from "react";
+"use client"
+import { useHandleScroll } from "@/hooks/useHandleScroll";
 import { MetodologiaCard } from "./MetodologiaCard";
 import { CodeMonitorSVG, MonitorSVG, PaperArrowsSVG, PaperSVG, RefreshMonitorSVG, MonitorPuzzleSVG } from "./icons"
 
 
 export const Metodologia = () => {
 
-	const [scrollPosition, setScrollPosition] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-          setScrollPosition(window.scrollY);
-          console.log(scrollPosition);
-          
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, [scrollPosition]);
+  const scrollPosition = useHandleScroll()
 
 
   return (
