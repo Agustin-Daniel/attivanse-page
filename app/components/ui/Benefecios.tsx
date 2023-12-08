@@ -129,7 +129,7 @@ export const Benefecios = () => {
                         {
                             cards.map((card, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="px-4">
+                                    <div className="px-4 cursor-pointer active:cursor-grab">
                                     <div className=" border ring-[1px] ring-coldgray p-6 rounded-lg">
                                         <div className="">
                                             <Image
