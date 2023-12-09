@@ -4,7 +4,7 @@ import { worksans } from "./fonts"
 
 export const CasoDeEstudio = () => {
   return (
-    <div className="bg-gray px-6 py-12 lg:pl-32 lg:pr-16 lg:py-28">
+    <div className="bg-gray px-6 py-12 lg:pl-32 lg:pr-16 lg:pt-16 lg:pb-24">
       <h2 className="mb-12 lg:mb-20 text-center">Caso de estudio</h2>
       <div>
         <div className="flex flex-col max-w-[380px] gap-10 m-auto lg:flex-row lg:justify-between lg:gap-0 lg:max-w-[1200px]">
