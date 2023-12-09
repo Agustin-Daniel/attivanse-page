@@ -13,8 +13,7 @@ export const CasoDeEstudio = () => {
             {/* <div className="w-[120px]"><StarsSVG /></div> */}
             <div className="flex gap-1">
               <a className="w-fit text-[12px] px-2 py-1 font-semibold border-[1px] cursor-pointer text-blue bg-white border-white hover:border-white hover:text-white hover:bg-opacity-0 rounded-[100px]">Semi-Custom Design</a>
-              <a className="w-fit text-[12px] px-2 py-1 font-semibold border-[1px] cursor-pointer text-white bg-[#002b87] border-[#002b87] hover:border-white hover:text-white hover:bg-opacity-0 rounded-[100px]">Nexts.js</a>
-              <a className="w-fit text-[12px] px-2 py-1 font-semibold border-[1px] cursor-pointer text-white bg-[#f3a157] border-[#f3a157] hover:border-white hover:text-white hover:bg-opacity-0 rounded-[100px]">CloudFlare</a>
+              <a className="w-fit text-[12px] px-2 py-1 font-semibold border-[1px] cursor-pointer text-white bg-[#febd1b] border-[#febd1b] hover:border-white hover:text-white hover:bg-opacity-0 rounded-[100px]">Page Content Writing</a>
             </div>
             <p className={clsx(worksans.className, "mb-5 mt-8 lg:mt-5 text-coldgray text-base")}>
               Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. 

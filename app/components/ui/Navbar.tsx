@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { BurgerSVG } from './icons';
 import { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
+import Link from 'next/link';
 
 
 export const Navbar = () => {
@@ -17,10 +18,10 @@ export const Navbar = () => {
 	  } 
 
       const links = [
-        { href: "#servicios", text: "Servicios" },
-        { href: "#metodologia", text: "Metodología" },
-        { href: "#precios", text: "Precios" },
-        { href: "#contacto", text: "Contacto" },
+        { href: "/addons-integrations", text: "Addons", link: true },
+        { href: "#metodologia", text: "Metodología", link: false },
+        { href: "#precios", text: "Precios", link: false },
+        { href: "#contacto", text: "Contacto", link: false },
       ];
 
   return (
@@ -31,8 +32,14 @@ export const Navbar = () => {
         </button>
         <ul className='hidden gap-10 text-lg font-medium lg:flex'>
             {links.map((link, index) => (
+            !link.link
+            ?
             <li key={index}>
                 <a className='hover:underline' href={link.href}>{link.text}</a>
+            </li>
+            :
+            <li key={index}>
+                <Link className='hover:underline' href={link.href}>{link.text}</Link>
             </li>
             ))}
             </ul>
@@ -47,9 +54,15 @@ export const Navbar = () => {
                 </div>
                 <ul className='flex flex-col text-lg font-medium'>
                     {links.map((link, index) => (
-                    <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
-                        <a className='w-full block pt-4 pb-3' href={link.href}>{link.text}</a>
-                    </li>
+                        !link.link 
+                        ?
+                            <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                                <a className='w-full block pt-4 pb-3' href={link.href}>{link.text}</a>
+                            </li>
+                        :
+                            <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                                <Link className='w-full block pt-4 pb-3' href={link.href}>{link.text}</Link>
+                            </li>
                     ))}
                 </ul>
                 </motion.div>

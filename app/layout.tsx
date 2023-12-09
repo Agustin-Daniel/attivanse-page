@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Navbar } from './components/ui/Navbar'
 import './globals.css'
 import { manrope } from './components/ui/fonts'
+import { Footer } from './components/ui/Footer'
 
 
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={manrope.className} style={{maxWidth: "1920px"}}> 
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

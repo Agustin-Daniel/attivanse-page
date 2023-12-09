@@ -45,7 +45,7 @@ const cards = [
 
 export const Pricing = () => {
   return (
-    <section className='bg-black pt-16 pb-20'>
+    <section id='precios' className='bg-black pt-16 pb-20'>
         <h2 className='text-center'>Pricing</h2>
         <div className='flex flex-col gap-24 items-center mt-20 lg:gap-[2%] lg:flex-row lg:justify-center'>
             {

@@ -39,7 +39,7 @@ export const FAQ = () => {
 	];
 
 	return (
-		<div className="bg-black py-12 px-5 flex flex-col items-center">
+		<section id='FAQ' className="bg-black py-12 px-5 flex flex-col items-center">
 			<h2>Preguntas frecuentes</h2>
 			<Accordion className="flex flex-col gap-8 lg:gap-7 mt-10 w-full max-w-[880px] lg:mt-14" type="single" collapsible>
         {
@@ -55,6 +55,6 @@ export const FAQ = () => {
           ))
         }
 			</Accordion>
-		</div>
+		</section>
 	);
 };

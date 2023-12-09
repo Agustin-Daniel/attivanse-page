@@ -10,7 +10,7 @@ export const Metodologia = () => {
 
 
   return (
-		<section className="bg-black px-8 pt-10 pb-12 lg:pt-16 lg:pb-52 lg:px-0">
+		<section id="metodologia" className="bg-black px-8 pt-10 pb-12 lg:pt-16 lg:pb-52 lg:px-0">
 			<h2 className="pb-12 lg:pb-24 text-center">Metodología</h2>
 			<div>
 				<MetodologiaCard
