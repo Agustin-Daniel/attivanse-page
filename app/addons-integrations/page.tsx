@@ -1,8 +1,24 @@
+"use client"
+
+import { motion } from "framer-motion"
+
+const variants = {
+    hidden: { opacity: 0, x: 0, y: -500 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+}
 
 export default function Addons() {
 	return (
-		<main className="flex justify-center z-20">
-            <section className="text-gray-600 body-font">
+            <main className="flex bg-black justify-center z-20">
+            <motion.section
+                variants={variants} // Pass the variant object into Framer Motion 
+                initial="hidden" // Set the initial state to variants.hidden
+                animate="enter" // Animated state to variants.enter
+                exit="exit" // Exit state (used later) to variants.exit
+                transition={{ type: 'linear', duration: 1 }} // Set the transition to linear
+                className="text-gray-600 body-font pt-24"
+            >
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
@@ -79,9 +95,8 @@ export default function Addons() {
                     </div>
                 </div>
                 </div>
-                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
             </div>
-            </section>
+            </motion.section>
 		</main>
 	);
 }

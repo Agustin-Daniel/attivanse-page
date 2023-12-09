@@ -4,44 +4,56 @@ import { BurgerSVG } from './icons';
 import { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 
-export const Navbar = () => {
-
-    const [burger, setBurger] = useState(false)
-
-	const animationPropsBurger = {
-		initial: { opacity: 0, x:428 },
-		animate: { opacity: 1, x:0 },
-		exit: { opacity: 0, x:428 },
-		transition: { duration: 0.3 }
-	  } 
+    const animationPropsBurger = {
+        initial: { opacity: 0, x:428 },
+        animate: { opacity: 1, x:0 },
+        exit: { opacity: 0, x:428 },
+        transition: { duration: 0.3 }
+      } 
 
       const links = [
         { href: "/addons-integrations", text: "Addons", link: true },
-        { href: "#metodologia", text: "Metodología", link: false },
-        { href: "#precios", text: "Precios", link: false },
-        { href: "#contacto", text: "Contacto", link: false },
+        { href: "/#metodologia", text: "Metodología", link: false },
+        { href: "/#precios", text: "Precios", link: false },
+        { href: "/#contacto", text: "Contacto", link: false },
       ];
+
+export const Navbar = () => {
+
+    const pathname = usePathname();
+
+    const [burger, setBurger] = useState(false)
 
   return (
     <nav className='z-10 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16'>
-        <Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
+        <Link href="/"><Image className='lg:h-[46px] lg:w-[240px]' quality={100} width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
         <button className='focus:outline-none lg:hidden'>
         <div onClick={() => setBurger(true)}><BurgerSVG /></div>
         </button>
         <ul className='hidden gap-10 text-lg font-medium lg:flex'>
-            {links.map((link, index) => (
-            !link.link
-            ?
-            <li key={index}>
-                <a className='hover:underline' href={link.href}>{link.text}</a>
-            </li>
+            {
+            pathname === '/' ?
+            links.map((link, index) => (
+                !link.link
+                ?
+                <li key={index}>
+                    <a className='hover:underline' href={link.href}>{link.text}</a>
+                </li>
+                :
+                <li key={index}>
+                    <Link className='hover:underline' href={link.href}>{link.text}</Link>
+                </li>
+            ))
             :
-            <li key={index}>
-                <Link className='hover:underline' href={link.href}>{link.text}</Link>
-            </li>
-            ))}
+            links.map((link, index) => (
+                <li key={index}>
+                    <Link className='hover:underline' href={link.href}>{link.text}</Link>
+                </li>
+            ))
+            }
             </ul>
         {/* Mobile */}
         <AnimatePresence>
@@ -53,17 +65,26 @@ export const Navbar = () => {
                     <div onClick={() => setBurger(false)}><BurgerSVG /></div>
                 </div>
                 <ul className='flex flex-col text-lg font-medium'>
-                    {links.map((link, index) => (
-                        !link.link 
+                {
+                    pathname === '/' ?
+                    links.map((link, index) => (
+                        !link.link
                         ?
-                            <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
-                                <a className='w-full block pt-4 pb-3' href={link.href}>{link.text}</a>
-                            </li>
+                        <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                            <a className='w-full block pt-4 pb-3' href={link.href}>{link.text}</a>
+                        </li>
                         :
-                            <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
-                                <Link className='w-full block pt-4 pb-3' href={link.href}>{link.text}</Link>
-                            </li>
-                    ))}
+                        <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                            <Link className='w-full block pt-4 pb-3' href={link.href}>{link.text}</Link>
+                        </li>
+                    ))
+                    :
+                    links.map((link, index) => (
+                        <li key={index} onClick={() => setBurger(false)} className='border-b-[1px] border-blue hover:text-blue'>
+                            <Link className='w-full block pt-4 pb-3' href={link.href}>{link.text}</Link>
+                        </li>
+                    ))
+                }
                 </ul>
                 </motion.div>
         }
