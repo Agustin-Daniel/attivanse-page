@@ -48,6 +48,7 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'spin-slow': 'spin 3s linear',
       },
       backgroundImage: {
           'header-img-1920': "url('/img/header-1920.png')",
