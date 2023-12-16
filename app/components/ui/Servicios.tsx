@@ -1,7 +1,25 @@
 import Image from "next/image"
 import {PenSVG, CodeSVG, AddonsSVG, MegaphoneSVG, CheckSVG} from "./icons"
+import { motion } from 'framer-motion';
 
 export const Servicios = () => {
+
+
+  const variants = {
+    hidden: { opacity: 0, y: -15 },
+    visible: (i:number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2, // incrementa el delay para cada elemento
+        duration: 0.5,
+      },
+    }),
+  };
+
+
+
+
   return (
     <section id="servicios" className="flex flex-col bg-black lg:items-center">
         <h2 className="text-center mt-20">Servicios</h2>
@@ -12,10 +30,19 @@ export const Servicios = () => {
               <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:max-w-[378px]">
                 <p className="mb-10">Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
                 <ul className="flex flex-col gap-4 w-fit">
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Diseñador experto dedicado</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Diseño acorde a su marca</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Estudio de la competencia</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Description of the features</li>
+                {['Diseñador experto dedicado', 'Diseño acorde a su marca', 'Estudio de la competencia', 'Description of the features'].map((text, i) => (
+                  <motion.li 
+                    className="flex gap-5"
+                    key={i + text}
+                    variants={variants}
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    custom={i}
+                    initial="hidden"
+                  >
+                    <CheckSVG height={24} width={24} />{text}
+                  </motion.li>
+                ))}
                 </ul>
               </div>
           </div>
@@ -27,10 +54,19 @@ export const Servicios = () => {
               <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:justify-self-end lg:max-w-[378px]">
                 <p className="mb-10">Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
                 <ul className="flex flex-col gap-4 w-fit">
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Sitio web ultra rápido</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Protección contra ataques de DDOS</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Filtros anti-spam</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Seguridad de CloudFlare</li>
+                {['Sitio web ultra rápido', 'Protección contra ataques de DDOS', 'Filtros anti-spam', 'Seguridad de CloudFlare'].map((text, i) => (
+                  <motion.li 
+                    className="flex gap-5"
+                    key={i + text}
+                    variants={variants}
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    custom={i}
+                    initial="hidden"
+                  >
+                    <CheckSVG height={24} width={24} />{text}
+                  </motion.li>
+                ))}
                 </ul>
               </div>
           </div>
@@ -42,10 +78,19 @@ export const Servicios = () => {
               <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:max-w-[378px]">
                 <p className="mb-10">Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
                 <ul className="flex flex-col gap-4 w-fit">
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />ADA (Web inclusiva)</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Chat bot online</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />SEO Hyperlocal (por paises)</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Calendly</li>
+                {['ADA (Web inclusiva)', 'Chat bot online', 'SEO Hyperlocal (por paises)', 'Calendly'].map((text, i) => (
+                  <motion.li 
+                    className="flex gap-5"
+                    key={i + text}
+                    variants={variants}
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    custom={i}
+                    initial="hidden"
+                  >
+                    <CheckSVG height={24} width={24} />{text}
+                  </motion.li>
+                ))}
                 </ul>
               </div>
           </div>
@@ -57,10 +102,19 @@ export const Servicios = () => {
               <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:justify-self-end lg:max-w-[378px]">
                 <p className="mb-10">Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.</p>
                 <ul className="flex flex-col gap-4 w-fit">
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Lorem ipsum</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Lorem ipsum</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Lorem ipsum</li>
-                  <li className="flex gap-5"><CheckSVG height={24} width={24} />Lorem ipsum</li>
+                {['Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum',].map((text, i) => (
+                  <motion.li 
+                    className="flex gap-5"
+                    key={i + text}
+                    variants={variants}
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    custom={i}
+                    initial="hidden"
+                  >
+                    <CheckSVG height={24} width={24} />{text}
+                  </motion.li>
+                ))}
                 </ul>
               </div>
           </div>

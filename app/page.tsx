@@ -24,7 +24,7 @@ export default function Home() {
 				variants={variants}
 				initial="hidden"
 				animate="enter"
-				transition={{ type: 'linear', duration: 0.5 }}
+				transition={{ type: 'linear', duration: 0.3 }}
 				className="max-w-[1920px] w-full"
 			>
 				<Header />
