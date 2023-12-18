@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import {PenSVG, CodeSVG, AddonsSVG, MegaphoneSVG, CheckSVG} from "./icons"
 import { motion } from 'framer-motion';
