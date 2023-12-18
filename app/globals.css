@@ -29,7 +29,7 @@
     @apply min-w-[160px] w-fit px-[32px] py-[23px] lg:px-[51px] rounded-[40px] bg-blue text-center text-base hover:bg-white hover:text-black;
   }
   .btn-secondary {
-    @apply min-w-[160px] w-fit px-[32px] py-[23px] lg:px-[51px] rounded-[40px] ring-white ring-1 ring-inset text-center text-base hover:bg-blue hover:text-white hover:ring-blue;
+    @apply min-w-[160px] w-fit px-[32px] py-[23px] lg:px-[51px] rounded-[40px] ring-white ring-1 ring-inset text-center text-base  hover:text-white hover:bg-white hover:text-black;
   }
   .service-icon {
     @apply rounded-[7px] bg-icon w-[33px] h-[34px] p-2 lg:rounded-[13px] lg:w-[61px] lg:h-[63px] lg:p-4;

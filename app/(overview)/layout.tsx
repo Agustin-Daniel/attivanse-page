@@ -19,7 +19,7 @@ export default function Layout({
         variants={variants}
         initial="hidden"
         animate="enter"
-        transition={{ type: 'linear', duration: 0.3 }}
+        transition={{ type: 'linear', duration: 0.5 }}
         className="max-w-[1920px] w-full"
     >
         {children}
