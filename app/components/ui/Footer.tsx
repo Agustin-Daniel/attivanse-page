@@ -42,8 +42,8 @@ export const Footer = () => {
           <section className="flex flex-col gap-2">
             <h3 className="text-base font-medium">Redes Sociales</h3>
             <ul className="flex gap-2">
-              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/linkedin-icon.png" quality={100} alt="linkedin icon" width={32} height={32} /></a></li>
-              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/instagram-icon.png" quality={100} alt="instagram icon" width={32} height={32} /></a></li>
+              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/linkedin-icon.png"  alt="linkedin icon" width={32} height={32} /></a></li>
+              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/instagram-icon.png"  alt="instagram icon" width={32} height={32} /></a></li>
             </ul>
           </section>
 

@@ -1,14 +1,15 @@
-
-import type { Metadata } from 'next'
+"use client"
+// import type { Metadata } from 'next'
 import Image from 'next/image';
 import { worksans } from '../components/ui/fonts';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
-export const metadata: Metadata = {
-    title: 'Attivanse | Addons & Integrations',
-    description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!",
-    keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios"
-}
+// export const metadata: Metadata = {
+//     title: 'Attivanse | Addons & Integrations',
+//     description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!",
+//     keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios"
+// }
 
 
 export default function Addons() {
@@ -93,6 +94,17 @@ export default function Addons() {
         },
     ]
 
+    const variants = {
+        hidden: { opacity: 0, y: -30 },
+        visible: (i:number) => ({
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: i * 0.3, // incrementa el delay para cada elemento
+            duration: 1,
+          },
+        }),
+      };
 
 
 	return (
@@ -107,8 +119,16 @@ export default function Addons() {
                     <div className="flex flex-wrap -m-4 justify-center items-center">
 
                     {
-                            cards.map((card, index) => (
-                                    <div key={index} className="p-1 md:p-4 w-1/2 lg:w-1/3 max-w-[600px]">
+                            cards.map((card, i) => (
+                                    <motion.div
+                                        key={i + card.title}
+                                        className="p-4 w-full 530:w-1/2 lg:w-1/3 max-w-[600px]"
+                                        variants={variants}
+                                        animate="visible"
+                                        viewport={{ once: true }}
+                                        custom={i}
+                                        initial="hidden"
+                                    >
                                         <div className='cursor-pointer active:cursor-grab border-[1px] border-coldgray rounded-lg'>
                                         <div className="">
                                             <Image
@@ -128,7 +148,7 @@ export default function Addons() {
                                             </p>
                                         </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                             ))
                         }
                     </div>

@@ -87,7 +87,7 @@ export const Tools = () => {
                         cards.map((card, index) => (
                             <SwiperSlide key={index}>
                                 <div className="flex flex-col items-center cursor-pointer active:cursor-grab">
-                                    <Image className="w-[100px] lg:w-[148px]" quality={100} width={148} height={148} src={card.image} alt={`${card.title}-icon`} />
+                                    <Image className="w-[100px] lg:w-[148px]"  width={148} height={148} src={card.image} alt={`${card.title}-icon`} />
                                     <h3 className="mt-1 lg:text-base">{card.title}</h3>
                                 </div>
                             </SwiperSlide>
