@@ -5,9 +5,9 @@ interface MotionliProps {
   variants?: Variants;
   whileInView: MotionProps["whileInView"];
   viewport: { once: boolean };
-  custom: number;
+  custom?: number;
   initial: MotionProps["initial"];
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MotionDiv from "@/app/(overview)/motion/MotionDiv";
+import MotionDiv from "./motion/MotionDiv";
 
 
 

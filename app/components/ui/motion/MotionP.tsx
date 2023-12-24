@@ -4,7 +4,7 @@ import { motion, Variants, MotionProps } from 'framer-motion';
 interface MotionPProps {
   variants: Variants;
   whileInView: MotionProps["whileInView"];
-  viewport: { once: boolean };
+  viewport?: { once: boolean };
   custom?: number;
   initial: MotionProps["initial"];
   className?: string;
