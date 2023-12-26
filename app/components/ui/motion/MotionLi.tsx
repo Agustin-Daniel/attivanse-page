@@ -1,18 +1,21 @@
 "use client"
-import { motion, Variants, MotionProps } from 'framer-motion';
+import { motion, Variants, MotionProps, Transition } from 'framer-motion';
 
 interface MotionliProps {
   variants?: Variants;
   whileInView: MotionProps["whileInView"];
-  viewport: { once: boolean };
+  transition?: Transition;
+  viewport: any;
   custom?: number;
   initial: MotionProps["initial"];
   className?: string;
   children: React.ReactNode;
+  style?: React.CSSProperties;
+  id?: string;
 }
 
 
-const Motionli: React.FC<MotionliProps> = ({ variants, whileInView="animation", viewport, custom, initial="initial", children, className }) => {
+const Motionli: React.FC<MotionliProps> = ({ variants, whileInView="animation", viewport, custom, initial="initial", children, className, style, id, transition }) => {
     
     
     const waterfall = {
@@ -21,7 +24,7 @@ const Motionli: React.FC<MotionliProps> = ({ variants, whileInView="animation", 
           opacity: 1,
           y: 0,
           transition: {
-            delay: i * 0.2 + 0.5,
+            delay: i * 0.2 + 0.4,
             duration: 0.5,
           },
         }),
@@ -32,13 +35,16 @@ const Motionli: React.FC<MotionliProps> = ({ variants, whileInView="animation", 
 
 
   return (
-    <motion.li 
+    <motion.li
+        id={id} 
         className={className}
         variants={realVariants}
         whileInView={whileInView}
+        transition={transition}
         viewport={viewport}
         custom={custom}
         initial={initial}
+        style={style}
     >
       { children }
     </motion.li>

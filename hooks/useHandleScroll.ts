@@ -3,23 +3,19 @@ import { useState, useEffect } from "react";
 
 // this hook is used to get the scroll position of the window
 export const useHandleScroll = () => {
-
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
-          setScrollPosition(window.scrollY);
-          console.log(scrollPosition);
-          
+            setScrollPosition(window.scrollY);
         };
-    
+
         window.addEventListener('scroll', handleScroll);
-    
+
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, [scrollPosition]);
+    }, []); // Removed scrollPosition from dependencies
 
-
-  return scrollPosition
+    return scrollPosition;
 }
