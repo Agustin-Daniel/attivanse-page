@@ -5,7 +5,7 @@ import { CasoDeEstudio } from "../components/ui/CasoDeEstudio";
 import { Pricing } from "../components/ui/Pricing";
 import { Contact } from "../components/ui/Contact";
 import { FAQ } from "../components/ui/FAQ";
-import { Benefecios } from "../components/ui/Benefecios";
+import { Benefecios } from "../components/ui/BeneficiosSection/Benefecios";
 import { Tools } from "../components/ui/ToolsSection/Tools";
 
 

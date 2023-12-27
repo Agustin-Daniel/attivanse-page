@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { useHandleResize } from "@/hooks/useHandleResize";
-import { motion } from 'framer-motion';
+import MotionDiv from "../motion/MotionDiv";
 
 export const SwiperTools = () => {
 
@@ -40,11 +40,10 @@ export const SwiperTools = () => {
         },
     ]
 
-    const variantsP = {
-        initial: { opacity: 0, y: 20 },
+    const variants = {
+        initial: { opacity: 0 },
         animation: {
           opacity: 1,
-          y: 0,
           transition: {
             delay: 0.2,
             duration: 1,
@@ -53,9 +52,9 @@ export const SwiperTools = () => {
     };
 
   return (
-    <motion.div
+    <MotionDiv
         className="flex flex-wrap justify-around -m-4 gap-20"
-        variants={variantsP}
+        variants={variants}
         whileInView="animation"
         initial="initial"
         viewport={{ once: true }}
@@ -101,6 +100,6 @@ export const SwiperTools = () => {
             ))
         }
     </Swiper>
-    </motion.div>
+    </MotionDiv>
   )
 }

@@ -46,7 +46,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
           <h3>{title}</h3>
         </MotionDiv>
         <MotionDiv
-          className="w-[368px] mb-12 lg:row-span-2 lg:mb-0 lg:w-[42vw] lg:max-w-[550px] justify-self-end"
+          className="w-full max-w-[368px] mb-12 lg:row-span-2 lg:mb-0 lg:w-[42vw] lg:max-w-[550px] justify-self-end"
           variants={variantsP}
           whileInView="animation"
           initial="initial"
@@ -95,7 +95,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
         <h3>{title}</h3>
       </MotionDiv>
       <MotionDiv
-        className="w-[368px] mb-12 lg:mb-0 lg:row-start-1 lg:row-end-3 lg:w-[42vw] lg:max-w-[550px] justify-self-end"
+        className="w-full max-w-[368px] mb-12 lg:mb-0 lg:row-start-1 lg:row-end-3 lg:w-[42vw] lg:max-w-[550px] justify-self-end"
         variants={variantsP}
         whileInView="animation"
         initial="initial"

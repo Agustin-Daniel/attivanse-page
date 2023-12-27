@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import { worksans } from '../fonts';
 import { CircleLine } from './CircleLine';
+import MotionDiv from '../motion/MotionDiv';
 
 type Prop = {
 	// `icon` es un elemento JSX que se renderiza como un icono en el componente.
@@ -20,6 +21,30 @@ type Prop = {
 	 // `revert` cambia la orientacion.
 	revert?:boolean
 }
+
+const variantsLeft = {
+	initial: { opacity: 0, x: -20 },
+	animation: {
+	  opacity: 1,
+	  x: 0,
+	  transition: {
+		delay: 0.2,
+		duration: 1,
+	  },
+	},
+};
+
+const variantsRight = {
+	initial: { opacity: 0, x: 20 },
+	animation: {
+	  opacity: 1,
+	  x: 0,
+	  transition: {
+		delay: 0.2,
+		duration: 1,
+	  },
+	},
+};
 
 export const MetodologiaCard = ({
 	icon,
@@ -51,19 +76,23 @@ export const MetodologiaCard = ({
 			>
 				<CircleLine scrollNumber={scrollNumber} lineOff={lineOff} />
 			</div>
-			<div
+			<MotionDiv
 				className={clsx(
 					"flex flex-col justify-end gap-6 lg:w-full lg:justify-start mt-3 lg:mt-0",
 					{
 						"lg:text-right lg:items-end": revert,
 					}
 				)}
+				variants={revert ? variantsRight : variantsLeft}
+				whileInView="animation"
+				initial="initial"
+				viewport={{ once: true }}
 			>
-				<h3>{title}</h3>
+				<h3 className='w-fit'>{title}</h3>
 				<p className={clsx(worksans.className, "text-coldgray mb-8 w-[60vw] max-w-[335px] lg:max-w-none lg:w-[378px]")}>
 					{description}
 				</p>
-			</div>
+			</MotionDiv>
 		</div>
 	);
 };
