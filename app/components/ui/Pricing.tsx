@@ -8,7 +8,7 @@ const cards = [
         premium: false,
         popular: false,
         img:"/img/price-img-1.png",
-        price: {base: "299", monthly: "25"},
+        price: {base: "499", monthly: "49"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",
@@ -21,7 +21,7 @@ const cards = [
         premium: false,
         popular: true,
         img:"/img/price-img-2.png",
-        price: {base: "499", monthly: "25"},
+        price: {base: "599", monthly: "49"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",
@@ -34,7 +34,7 @@ const cards = [
         premium: true,
         popular: false,
         img:"/img/price-img-3.png",
-        price: {base: "799", monthly: "25"},
+        price: {base: "899", monthly: "49"},
         description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
         features: [
             "Description of the features",

@@ -52,7 +52,7 @@ export const Metodologia = () => {
   return (
 		<ScrollProvider>
 			<section id="metodologia" className="bg-black px-8 pt-10 pb-12 lg:pt-16 lg:pb-52 lg:px-0">
-				<h2 className="pb-12 lg:pb-24 text-center">Metodología</h2>
+				<h2 className="pb-12 lg:pb-24 text-center">Nuestros Pasos a Serguir</h2>
 				<div>
 				{metodologiaData.map((data, index) => (
 					<MetodologiaCard

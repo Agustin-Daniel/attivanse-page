@@ -14,8 +14,7 @@ export const Footer = () => {
           <Image src="/img/attivanse-blue-logo.png" alt="attivanse blue icon" width={236} height={45} />
         </Link>
         <p className="text-sm font-normal w-[203px]">
-          Existimos para ayudar
-          a nuestros clientes a crecer
+          Tu empresa posicionada internacionalmente
         </p>
         </section>
 

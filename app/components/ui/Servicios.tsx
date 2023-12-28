@@ -62,7 +62,7 @@ export const Servicios = () => {
 
   return (
     <section id="servicios" className="flex flex-col bg-black lg:items-center">
-        <h2 className="text-center mt-20">Servicios</h2>
+        <h2 className="text-center mt-20">Desarrollo Web Integral</h2>
         {cards.map((card, index) => (
           <ServiciosCard
             key={index}
