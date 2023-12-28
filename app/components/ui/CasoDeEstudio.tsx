@@ -5,6 +5,7 @@ import { worksans } from "./fonts"
 import { SemiCustomDesing } from "./atoms/web-labels/SemiCustomDesing";
 import { PageContentWriting } from "./atoms/web-labels/PageContentWriting";
 import MotionDiv from "./motion/MotionDiv";
+import { HyperlocalWebsite } from "./atoms/web-labels/HyperlocalWebsite";
 
 const variantsText = {
 	initial: { opacity: 0, x: -30 },
@@ -37,25 +38,26 @@ export const CasoDeEstudio = () => {
       <div>
         <div className="flex flex-col max-w-[380px] gap-10 m-auto lg:flex-row lg:justify-between lg:gap-0 lg:max-w-[1200px]">
           <MotionDiv
-            className="flex flex-col text-left lg:w-[341px]"
+            className="flex flex-col text-left lg:w-[407px]"
             variants={variantsText}
             whileInView="animation"
             initial="initial"
             viewport={{ once: true }}
           >
-            <h4 className="mb-4 text-xl text-center font-semibold lg:mb-1 lg:text-left lg:text-3xl lg:leading-normal">Ciudad de Messina</h4>
-            <div className="flex gap-1">
+            <h4 className="mb-4 text-xl text-center font-semibold lg:mb-1 lg:text-left lg:text-[38px] lg:leading-normal">Ciudad de Messina</h4>
+            <div className="flex flex-wrap gap-x-1 gap-y-2">
               <SemiCustomDesing />
               <PageContentWriting />
+              <HyperlocalWebsite />
             </div>
             <div className="mb-5 mt-8 lg:mt-5">
               <p className={clsx(worksans.className, "text-coldgray text-base")}>
                 Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. 
                 <br />
-                <br />
+                Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.
+                <br /> <br />
                 Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade
-                <br />
-                <br />
+                <br /> <br />
                 Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade
               </p>
             </div>
