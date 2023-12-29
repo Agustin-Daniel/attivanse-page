@@ -39,7 +39,7 @@ export const Servicios = () => {
       list: [
         "Obten una web mas inclusiva con ADA",
         "Se mas eficiente con Chat-Bot online",
-        "SEO Hyperlocal (incluido)",
+        "Posicionamiento web internacional con SEO Hyperlocal",
         "Reuniones en un click con Calendly",
       ],
       revert: false,

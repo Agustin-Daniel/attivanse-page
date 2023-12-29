@@ -78,8 +78,8 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
               >
                 <CheckSVG height={24} width={24} />
                 {
-                  text === "SEO Hyperlocal (incluido)"
-                  ? <Link href="/addons-integrations" className="text-[#FEBD29] hover:text-blue">SEO Hyperlocal (incluido)</Link>
+                  text === "Posicionamiento web internacional con SEO Hyperlocal"
+                  ? <Link href="/addons-integrations" className="text-[#FEBD29] hover:text-blue">Posicionamiento web internacional con SEO Hyperlocal</Link>
                   : text
                 }
               </Motionli>

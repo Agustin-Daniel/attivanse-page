@@ -52,13 +52,9 @@ export const CasoDeEstudio = () => {
             </div>
             <div className="mb-5 mt-8 lg:mt-5">
               <p className={clsx(worksans.className, "text-coldgray text-base")}>
-                Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. 
-                <br />
-                Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.
-                <br /> <br />
-                Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade
-                <br /> <br />
-                Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade
+              Transformamos una página web de nivel básico en una de primera clase! Comenzamos realizando un diseño que cumpla con sus necesidades y las de sus clientes potenciales, luego realizamos un profundo análisis SEO internacional, asegurándonos de que la misma pueda posicionarse en el exterior.
+              <br /><br />
+              El resultado es una página web moderna y atractiva que destaca entre todas. Con un diseño visualmente impactante, la página no solo atrae la atención de la audiencia global, sino que también ofrece una experiencia de usuario refinada. Este proceso mejoro sustancialmente su presencia digital, generando oportunidades de crecimiento, expansión y ventas.
               </p>
             </div>
             <a className={clsx(worksans.className, "text-blue underline hover:text-white w-fit")} target="_blank" href="https://ciudaddemessina.com/">Visitar página</a>
