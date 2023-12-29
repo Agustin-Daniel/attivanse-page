@@ -8,20 +8,20 @@ const metodologiaData = [
 	  icon: <PaperSVG />,
 	  scrollNumber: { desktop: 3000, mobile: 3515 },
 	  title: "Estudio de necesidades",
-	  description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. ",
+	  description: "Antes que nada nos sumergiremos en un análisis profundo para entender las necesidades exclusivas de tu negocio. Identificamos las oportunidades que te destacan, realizamos sugerencias y creamos estrategias personalizadas.",
 	},
 	{
 	  icon: <MonitorSVG />,
 	  scrollNumber: { desktop: 3280, mobile: 3992 },
 	  title: "Diseño",
-	  description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. ",
+	  description: "El diseño es la clave para el éxito. En esta etapa nuestro equipo de diseñadores se dedicara a que su sitio web sea atractivo, intuitivo y fácil de usar.",
 	  revert: true,
 	},
 	{
 	  icon: <PaperArrowsSVG />,
 	  scrollNumber: { desktop: 3560, mobile: 4495 },
 	  title: "Revisiones",
-	  description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk. ",
+	  description: "Realizamos revisiones en conjunto para asegurarnos de que todo cumple con sus expectativas. De no ser asi se realizaran los cambios necesarios hasta que el resultado sea el esperado sin ningun tipo de compromiso!",
 	},
 	{
 	  icon: <CodeMonitorSVG />,
