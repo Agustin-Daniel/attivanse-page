@@ -9,12 +9,12 @@ export const Servicios = () => {
     {
       icon: <PenSVG />,
       title: "Diseño",
-      description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.",
+      description: "Nuestro diseño no solo se trata de verse bien, sino de generar resultados comerciales para tu negocio. Analizamos a fondo la competencia para asegurarnos de que tu diseño se destaque, sea innnovador y unico!",
       list: [
         "Diseñador experto dedicado",
         "Diseño acorde a su marca",
         "Estudio de la competencia",
-        "Description of the features",
+        "Revisiones sin compromiso",
       ],
       revert: false,
       img: "/img/service-design.png",
@@ -22,7 +22,7 @@ export const Servicios = () => {
     {
       icon: <CodeSVG />,
       title: "Tecnologia",
-      description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.",
+      description: "Nosotros vamos más allá de lo superficial. Nos especializamos en Next.js para realizar sitios web ultrarrápidos y para proteger tu presencia en línea. Todas nuestras webs son seguras, eficientes e incomparables!",
       list: [
         "Sitio web ultra rápido",
         "Protección contra ataques de DDOS",
@@ -35,11 +35,11 @@ export const Servicios = () => {
     {
       icon: <AddonsSVG />,
       title: "Agregados",
-      description: "Lörem ipsum ser. Pokenad kvasir berat. Pseudov mobevis ponde monedossade i vusamma. Mipektig sisat fån beda, pres. Dologi bigen, plalig, besk.",
+      description: "Su sitio web puede ser mucho más que una simple tarjeta de presentación. Podemos agregarle funcionalidades totalmente escalables que le permitiran a su negocio crecer y expandirse cuando lo desee!.",
       list: [
-        "ADA (Web inclusiva)",
+        "ADA Web inclusiva",
         "Chat bot online",
-        "SEO Hyperlocal (por paises)",
+        "SEO Hyperlocal (incluido)",
         "Calendly",
       ],
       revert: false,

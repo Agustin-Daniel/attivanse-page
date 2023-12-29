@@ -5,6 +5,8 @@ import Motionli from "./motion/MotionLi"
 import { CheckSVG } from "./icons";
 import { ReactElement} from "react";
 import MotionDiv from "./motion/MotionDiv";
+import clsx from "clsx";
+import Link from "next/link";
 
 const variantsP = {
     initial: { opacity: 0, y: -20 },
@@ -54,7 +56,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
         >
           <Image src={img} width={606} height={502} alt="design image" />
         </MotionDiv>
-        <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:max-w-[378px]">
+        <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:max-w-[378px] text-pretty">
           <MotionP
             className="mb-10"
             variants={variantsP}
@@ -74,7 +76,12 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
                 custom={i}
                 initial="initial"
               >
-                <CheckSVG height={24} width={24} />{text}
+                <CheckSVG height={24} width={24} />
+                {
+                  text === "SEO Hyperlocal (incluido)"
+                  ? <Link href="/addons-integrations" className="text-[#FEBD29] hover:text-blue">SEO Hyperlocal (incluido)</Link>
+                  : text
+                }
               </Motionli>
             ))}
           </ul>
