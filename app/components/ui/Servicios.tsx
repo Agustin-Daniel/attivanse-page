@@ -38,9 +38,9 @@ export const Servicios = () => {
       description: "Su sitio web puede ser mucho más que una simple tarjeta de presentación. Podemos agregarle funcionalidades totalmente escalables que le permitiran a su negocio crecer y expandirse cuando lo desee!.",
       list: [
         "Obten una web mas inclusiva con ADA",
-        "Se mas eficiente con Chat-Bot online",
         "Posicionamiento web internacional con SEO Hyperlocal",
-        "Reuniones en un click con Calendly",
+        "Se mas eficiente con Chat-Bot online",
+        "Diseño de logos y branding",
       ],
       revert: false,
       img: "/img/service-addons.png",
@@ -51,7 +51,7 @@ export const Servicios = () => {
       description: "Nuestro equipo de marketing digital puede ayudarlo a generar más tráfico, más clientes potenciales y más ventas. Nuestros servicios de marketing digital incluyen SEO, PPC, redes sociales y más!",
       list: [
         "Potentes herramientas de publicación productos y servicios",
-        "Configuraciones avanzadas de SEO para una mejor clasificación de palabras clave",
+        "Configuraciones avanzadas de SEO para una mejor clasificación",
         "Opción social optimizada para Facebook y Google",
         "Formularios de contacto, CTA y más",
       ],

@@ -8,7 +8,7 @@ const metodologiaData = [
 	  icon: <PaperSVG />,
 	  scrollNumber: { desktop: 3000, mobile: 3515 },
 	  title: "Estudio de necesidades",
-	  description: "Antes que nada nos sumergiremos en un análisis profundo para entender las necesidades exclusivas de tu negocio. Identificamos las oportunidades que te destacan, realizamos sugerencias y creamos estrategias personalizadas.",
+	  description: "Antes que nada realizamos un análisis profundo para entender las necesidades exclusivas de tu empresa. Identificamos lo que te destacan y creamos estrategias personalizadas.",
 	},
 	{
 	  icon: <MonitorSVG />,
@@ -21,7 +21,7 @@ const metodologiaData = [
 	  icon: <PaperArrowsSVG />,
 	  scrollNumber: { desktop: 3560, mobile: 4495 },
 	  title: "Revisiones",
-	  description: "Realizamos revisiones en conjunto para asegurarnos de que todo cumple con sus expectativas. De no ser asi se realizaran los cambios necesarios hasta que el resultado sea el esperado sin ningun tipo de compromiso!",
+	  description: "Realizamos revisiones en conjunto para asegurarnos de que todo cumple con sus expectativas. De no ser asi se realizaran los cambios necesarios sin ningun tipo de compromiso!",
 	},
 	{
 	  icon: <CodeMonitorSVG />,
@@ -34,13 +34,13 @@ const metodologiaData = [
 	  icon: <RefreshMonitorSVG />,
 	  scrollNumber: { desktop: 4120, mobile: 5447 },
 	  title: "Puesta en marcha",
-	  description: "Todo listo! se realiza una prueba final para asegurarnos de que todo funciona correctamente. Luego de esto se realiza la puesta en marcha y se publica el sitio web.",
+	  description: "Todo listo! se realiza una prueba final para asegurarnos de que todo funciona correctamente. Luego de esto se publica el sitio web.",
 	},
 	{
 	  icon: <MonitorPuzzleSVG />,
 	  scrollNumber: { desktop: 4400, mobile: 5927 },
 	  title: "Addons & Integraciónes",
-	  description: "¿Te olvidate de algo? No te preocupes! Su sitio web es completamente escalable y se pueden agregar nuevas funcionalidades en cualquier momento! Siempre estamos atentos a las ultimas tendencias para que su sitio web este siempre actualizado.",
+	  description: "¿Te olvidate de algo? No te preocupes! Tu sitio web es completamente escalable! Siempre estamos atentos a las ultimas tendencias para que este por encima de la competencia.",
 	  lineOff: true,
 	  revert: true,
 	},

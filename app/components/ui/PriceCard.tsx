@@ -18,7 +18,7 @@ export const PriceCard = ({title, img, price, description, features, premium, po
 
 
   return (
-    <div className='flex relative flex-col items-center w-[326px] px-8 pb-14 rounded-[25px] border-coldgray border-[0.5px]'>
+    <div className='flex relative flex-col items-center w-[338px] min-h-[625px] px-8 pb-14 rounded-[25px] border-coldgray border-[0.5px]'>
         <Image className='mt-[-34px] mb-7 rounded-t-[25px]' src={img} alt={title} width={279} height={163} />
         <h4  className='mb-3 text-blue font-normal'>{title}</h4>
         {
@@ -29,7 +29,7 @@ export const PriceCard = ({title, img, price, description, features, premium, po
             <span className='text-[38px] font-bold leading-normal'>${price.base}</span>
             <span className={clsx(worksans.className, 'leading-normal text-lightwhite')}>+ ${price.monthly} por mes</span>
         </div>
-        <ul className="flex flex-col gap-4 w-fit">
+        <ul className="flex flex-col gap-4 w-fit min-h-[130px]">
             {
                 features.map((feature, index) => (
                     <li key={index} className={clsx(
@@ -42,6 +42,14 @@ export const PriceCard = ({title, img, price, description, features, premium, po
                 ))
             }
         </ul>
+        <a
+            role="button"
+            className="btn-primary py-4 px-[59px] mt-9"
+            href="#contacto"
+            aria-label="Hablemos de tu web"
+        >
+            Hablemos de tu web!
+        </a>
     </div>
   )
 }

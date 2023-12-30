@@ -31,10 +31,11 @@ export const Footer = () => {
           <section className="flex flex-col gap-2">
             <h3 className="text-base font-medium">Secciones</h3>
             <ul className="flex flex-col gap-4">
-              <li className="text-sm font-normal">Servicios</li>
-              <li className="text-sm font-normal">Metodología</li>
-              <li className="text-sm font-normal">Precios</li>
-              <li className="text-sm font-normal">Contacto</li>
+              <li className="text-sm font-normal"><a href="#servicios">Servicios</a></li>
+              <li className="text-sm font-normal"><Link href="/addons-integrations">Addons</Link></li>
+              <li className="text-sm font-normal"><a href="#metodologia">Metodología</a></li>
+              <li className="text-sm font-normal"><a href="#precios">Precios</a></li>
+              <li className="text-sm font-normal"><a href="#contacto">Contacto</a></li>
             </ul>
           </section>
 

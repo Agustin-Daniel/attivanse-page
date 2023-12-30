@@ -9,11 +9,11 @@ const cards = [
         popular: false,
         img:"/img/price-img-1.png",
         price: {base: "499", monthly: "49"},
-        description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
+        description:"Sitio web escalable, accesible y rapido lanzamiento.",
         features: [
-            "Description of the features",
-            "Description of the features",
-            "Description of the features"
+            "Rapido lanzamiento",
+            "Personalizado con tu marca",
+            "Formulario personalizado"
         ]
     },
     {
@@ -22,11 +22,11 @@ const cards = [
         popular: true,
         img:"/img/price-img-2.png",
         price: {base: "599", monthly: "49"},
-        description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
+        description:"Un resultado final personalizado un precio más bajo.",
         features: [
-            "Description of the features",
-            "Description of the features",
-            "Description of the features"
+            "Posicionamiento web internacional",
+            "Página de inicio personalizada",
+            "Diseñador senior dedicado",
         ]
     },
     {
@@ -35,11 +35,11 @@ const cards = [
         popular: false,
         img:"/img/price-img-3.png",
         price: {base: "899", monthly: "49"},
-        description:"Lörem ipsum astronas preniriröv, om gytt. Frågestrejka nyl av göra",
+        description:"Hecho desde cero para combinar perfectamente con su marca.",
         features: [
-            "Description of the features",
-            "Description of the features",
-            "Description of the features"
+            "Página de inicio a medida",
+            "10 páginas interiores personalizadas",
+            "Diseñador senior dedicado"
         ]
     },
 ]
@@ -84,8 +84,8 @@ const variantsCardCenter = {
 export const Pricing = () => {
   return (
     <section id='precios' className='bg-black pt-16 pb-20'>
-        <h2 className='text-center'>Pricing</h2>
-        <div className='flex flex-col gap-24 items-center mt-20 lg:gap-[2%] lg:flex-row lg:justify-center'>
+        <h2 className='text-center'>Precios</h2>
+        <div className='flex flex-col flex-wrap gap-24 items-center mt-20 lg:gap-[2%] lg:flex-row lg:justify-center'>
             {
                 cards.map((card, index) => (
                     <MotionDiv

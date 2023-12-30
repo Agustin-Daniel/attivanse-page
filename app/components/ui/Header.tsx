@@ -51,14 +51,14 @@ export const Header = () => {
 					animate="visible"
 					initial="hidden"
 				>
-					<Link
+					<a
 						role="button"
 						className="btn-primary"
 						href="#contacto"
 						aria-label="Programa una reunión"
 					>
 						Programa una reunión
-					</Link>
+					</a>
 				</MotionDiv>
 			</div>
 		</header>

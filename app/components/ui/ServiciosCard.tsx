@@ -76,7 +76,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
                 custom={i}
                 initial="initial"
               >
-                <CheckSVG height={24} width={24} />
+                <CheckSVG className="min-w-6" height={24} width={24} />
                 {
                   text === "Posicionamiento web internacional con SEO Hyperlocal"
                   ? <Link href="/addons-integrations" className="text-[#FEBD29] hover:text-blue">Posicionamiento web internacional con SEO Hyperlocal</Link>
@@ -130,7 +130,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
               custom={i}
               initial="initial"
             >
-              <CheckSVG height={24} width={24} />{text}
+              <CheckSVG className="min-w-6" height={24} width={24} />{text}
             </Motionli>
           ))}
         </ul>
