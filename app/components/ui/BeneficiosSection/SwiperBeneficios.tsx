@@ -92,14 +92,14 @@ export const SwiperBeneficios = () => {
             cards.map((card, index) => (
                     <SwiperSlide key={index}>
                         <div className="px-4 cursor-pointer active:cursor-grab">
-                        <div className=" border ring-[1px] ring-coldgray p-6 rounded-lg">
+                        <div className=" border ring-[1px] ring-coldgray p-6 rounded-lg min-h-[204px]">
                             <div className="">
                                 <Image
-                                    className="w-[80px] h-[64px]"
-                                    src="/img/reviews-thin.png"
+                                    className="w-[40px]"
+                                    src="/img/icons/medal-green.png"
                                     alt="hero"
-                                    width={106}
-                                    height={85}
+                                    width={62}
+                                    height={89}
                                 />
                             </div>
                             <h5 className="text-lg font-bold mt-[5px]">

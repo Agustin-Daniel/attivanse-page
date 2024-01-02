@@ -53,7 +53,7 @@ export const Footer = () => {
 
         <div>
           <div className="w-full h-[1px] bg-[#44484A]"></div>
-          <p className="pt-7 text-sm font-normal text-[#44484A]">Copyright © 2023. All Right Reserverd</p>
+          <p className="pt-7 text-sm font-normal text-[#44484A]">Copyright © {new Date().getFullYear()}. All Right Reserverd</p>
         </div>
 
     </footer>

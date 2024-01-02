@@ -8,7 +8,7 @@ const cards = [
         premium: false,
         popular: false,
         img:"/img/price-img-1.png",
-        price: {base: "499", monthly: "49"},
+        price: {base: "500", monthly: "129"},
         description:"Sitio web escalable, accesible y rapido lanzamiento.",
         features: [
             "Rapido lanzamiento",
@@ -21,7 +21,7 @@ const cards = [
         premium: false,
         popular: true,
         img:"/img/price-img-2.png",
-        price: {base: "599", monthly: "49"},
+        price: {base: "1000", monthly: "129"},
         description:"Un resultado final personalizado un precio más bajo.",
         features: [
             "Posicionamiento web internacional",
@@ -34,7 +34,7 @@ const cards = [
         premium: true,
         popular: false,
         img:"/img/price-img-3.png",
-        price: {base: "899", monthly: "49"},
+        price: {base: "2500", monthly: "129"},
         description:"Hecho desde cero para combinar perfectamente con su marca.",
         features: [
             "Página de inicio a medida",

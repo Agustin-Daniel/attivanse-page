@@ -9,7 +9,7 @@ export const Servicios = () => {
     {
       icon: <PenSVG />,
       title: "Diseño",
-      description: "Nuestro diseño no solo se trata de verse bien, sino de generar resultados comerciales para tu negocio. Analizamos a fondo la competencia para asegurarnos de que tu diseño se destaque, sea innnovador y unico!",
+      description: "Nuestros diseños no solo se tratan de verse bien, sino de generar resultados comerciales para tu empresa! Analizamos a fondo la competencia para asegurarnos de que tu diseño se destaque, sea innnovador y unico!",
       list: [
         "Diseñador experto dedicado",
         "Diseño acorde a su marca",
@@ -22,7 +22,7 @@ export const Servicios = () => {
     {
       icon: <CodeSVG />,
       title: "Tecnologia",
-      description: "Nosotros vamos más allá de lo superficial. Nos especializamos en Next.js para realizar sitios web ultrarrápidos y para proteger tu presencia en línea. Todas nuestras webs son seguras, eficientes e incomparables!",
+      description: "Vamos más allá de lo superficial. Nos especializamos en Next.js para realizar sitios web ultrarrápidos y para proteger tu presencia en línea. Todas nuestras webs son seguras, eficientes e incomparables!",
       list: [
         "Sitio web ultra rápido",
         "Protección contra ataques de DDOS",
@@ -35,7 +35,7 @@ export const Servicios = () => {
     {
       icon: <AddonsSVG />,
       title: "Agregados",
-      description: "Su sitio web puede ser mucho más que una simple tarjeta de presentación. Podemos agregarle funcionalidades totalmente escalables que le permitiran a su negocio crecer y expandirse cuando lo desee!.",
+      description: "Tu sitio web puede ser mucho más que una simple tarjeta de presentación. Podemos agregarle funcionalidades totalmente escalables que le permitiran a su negocio crecer y expandirse cuando lo desee!.",
       list: [
         "Obten una web mas inclusiva con ADA",
         "Posicionamiento web internacional con SEO Hyperlocal",

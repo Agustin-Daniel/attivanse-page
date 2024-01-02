@@ -10,10 +10,10 @@ export const Benefecios = () => {
 			<div className="w-[90%] max-w-[1450px] pb-24 mx-auto">
 				<div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
 					<h2 className="mb-2 lg:lg:text-5xl font-bold">
-						<strong className="text-[#FEBD29]">Beneficios</strong> de trabajar con los mejores
+						<strong className="text-[#FEBD29]">Beneficios</strong> de trabajar con los #1
 					</h2>
 					<p className="lg:w-1/2 w-full leading-relaxed">
-                        Su empresa se beneficiará de nuestra experiencia en el desarrollo de software
+                        Somos los mejores en posicionamiento internacional de empresas
 					</p>
 				</div>
 				<div className="flex flex-wrap -m-4">
