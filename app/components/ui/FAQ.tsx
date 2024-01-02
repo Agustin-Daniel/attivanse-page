@@ -14,29 +14,39 @@ import MotionDiv from './motion/MotionDiv';
 export const FAQ = () => {
 	const questions = [
 		{
-			title: "Lörem ipsum trollfilter katt nynade abumill. Timellare?",
+			title: "Ya tengo un sitio web ¿Pueden remplazarlo?",
 			content:
-				"Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. Geongen id-sprej i studsmattesjuka. Curla miprepönde did, i deciska, sagt. Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. ",
+				"Si, podemos remplazarlo, y es muy sensillo! Siempre y cuando el sitio web sea de su propiedad y tenga acceso a el. Si no es así, podemos ayudarlo a crear uno nuevo.",
 		},
 		{
-			title: "Lörem ipsum trollfilter katt nynade abumill. Timellare?",
+			title: "¿Cuanto tiempo tarda en estar listo mi sitio web?",
 			content:
-				"Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. Geongen id-sprej i studsmattesjuka. Curla miprepönde did, i deciska, sagt. Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. ",
+				"El tiempo de desarrollo de un sitio web depende de la complejidad del mismo. En promedio, un sitio web puede estar listo en 4 semanas. Pero si el sitio web es muy complejo, puede tardar hasta 3 meses.",
 		},
 		{
-			title: "Lörem ipsum trollfilter katt nynade abumill. Timellare?",
+			title: "¿Puedo hacer cambios en mi sitio web?",
 			content:
-				"Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. Geongen id-sprej i studsmattesjuka. Curla miprepönde did, i deciska, sagt. Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. ",
+				"Si, puede hacer cambios en su sitio web. Pero si no tiene conocimientos de programación, le recomendamos que se comunique con nosotros y haremos los cambios por usted!",
 		},
 		{
-			title: "Lörem ipsum trollfilter katt nynade abumill. Timellare?",
+			title: "¿Puedo agregar una tienda online a mi sitio web?",
 			content:
-				"Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. Geongen id-sprej i studsmattesjuka. Curla miprepönde did, i deciska, sagt. Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. ",
+				"Claro que si! Podemos crearle una tienda oline a medida exclusiva para su empresa. Y si ya tiene una tienda online, podemos integrarla a su sitio web.",
 		},
 		{
-			title: "Lörem ipsum trollfilter katt nynade abumill. Timellare?",
+			title: "¿Qué cubre la tarifa mensual de $129*?",
 			content:
-				"Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. Geongen id-sprej i studsmattesjuka. Curla miprepönde did, i deciska, sagt. Lörem ipsum sper passivhus reasåsam hyn. Tirad. Dekande makrorade. ",
+				"La tarifa mensual de $129* cubre el mantenimiento de su sitio web, hosting, dominio, certificado SSL, actualizaciones de seguridad, actualizaciones de contenido, actualizaciones de diseño, soporte técnico y mucho más!",
+		},
+		{
+			title: "¿Cuánto apoyo recibo?",
+			content:
+				"Recibirá soporte técnico ilimitado! Siempre que necesite ayuda, puede comunicarse con nosotros por mail y lo ayudaremos con cualquier problema que tenga.",
+		},
+		{
+			title: "¿Los sitios web de Attivanse cumplen con la ADA?",
+			content:
+				"Si, todos los sitios web de Attivanse cumplen con la ADA. Si desea llevarlo al siguiente nivel puede adquirir el addon ADA Protection por $49* mensuales. Este addon incluye un widget de accesibilidad y un botón interactivo de accesibilidad en su sitio web.",
 		},
 	];
 

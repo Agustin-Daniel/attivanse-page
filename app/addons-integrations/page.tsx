@@ -15,81 +15,83 @@ import { motion } from 'framer-motion';
 export default function Addons() {
     
     
-    
+    //!hacer use-server
+    //*agregar price
+    // * Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!
     const cards = [
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Smart Assist Premium",
+            description: "Soporte técnico 24/7 para tu sitio web. Nuestro equipo de expertos está listo para ayudarte con cualquier problema que tengas con tu sitio web.",
             image: "/img/addons/addon-smart.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Logo Design & Branding Guide",
+            description: "¿Listo para una cambio? Nuestro equipo de diseñadores gráficos creará un branding profesional para su empresa.",
             image: "/img/addons/addon-branding.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Click Maps",
+            description: "Lo haremos visible en el mapa de Google para que sus clientes potenciales puedan encontrarlo fácilmente.",
             image: "/img/addons/addon-clickmaps.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Page Content Writing",
+            description: "Expertos en SEO y Copywriting escribirán el contenido de su sitio web para que pueda obtener más clientes potenciales y ventas.",
             image: "/img/addons/addon-page-content.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Blog Assist Writing",
+            description: "Expertos en SEO y Copywriting escribirán blogs para su sitio web para que pueda obtener más clientes potenciales y ventas.",
             image: "/img/addons/addon-blog-assist.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "ADA Protect",
+            description: "¡Una empresa inclusiva! Hacemos que su sitio web sea accesible para personas con discapacidades visuales y auditivas.",
             image: "/img/addons/addon-ada-protect.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Custom Forms",
+            description: "Agregue formularios personalizados de cualquier tipo a su sitio web para capturar clientes potenciales.",
             image: "/img/addons/addon-custom-forms.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Hyperlocal Website",
+            description: "Posiciona tu sitio web en los primeros lugares de idiomas especificos para que tus clientes puedan encontrarte fácilmente.",
             image: "/img/addons/addon-hyperlocal-website.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "RSS To Mailchimp",
+            description: "Conecte su sitio web con Mailchimp para que pueda enviar correos electrónicos a sus clientes potenciales.",
             image: "/img/addons/addon-rrs-mailchimp.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Make Reservations",
+            description: "Organiza reuniones directamente desde tu sitio web con Calendly ¡No más correos electrónicos de ida y vuelta!",
             image: "/img/addons/addon-make-reservations.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Social Management",
+            description: "Chat en vivo, respuestas automaticas y mucho mas con nuestro servicio de social management.",
             image: "/img/addons/addon-social-management.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Instagram Feed",
+            description: "Muestre su feed de Instagram en su sitio web para que sus clientes puedan ver sus últimas publicaciones.",
             image: "/img/addons/addon-instagram.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "Facebook Feed",
+            description: "Muestre su feed de Facebook en su sitio web para que sus clientes puedan ver sus últimas publicaciones.",
             image: "/img/addons/addon-facebook.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "ShowReviews",
+            description: "Muestre las reseñas de Google en su sitio web para generar confianza en sus clientes potenciales.",
             image: "/img/addons/addon-reviews.png"
         },
         {
-            title: "Capture clientes potenciales",
-            description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
+            title: "More Addons",
+            description: "¿Necesitas algo más? ¡Contáctanos! Podemos hacer cualquier cosa que necesites para tu sitio web empresarial.",
             image: "/img/addons/addon-plus.png"
         },
     ]
@@ -112,8 +114,8 @@ export default function Addons() {
                 <div className="container px-5 py-24 mx-auto">
                     
                     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-                        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Escale su Pagina Web con Complementos Premium</h1>
+                        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Agregue cualquiera de nuestros complementos exclusivos a su web cuando lo desee! Nuestras paginas web son completamente escalables</p>
                     </div>
 
                     <div className="flex flex-wrap -m-4 justify-center items-center">
