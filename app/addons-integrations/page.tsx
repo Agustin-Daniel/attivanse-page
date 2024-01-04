@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import MotionDivAddons from './MotionDivAddons';
 import Link from 'next/link';
 import { addonsData } from '../data/addonsData';
+import { truncateText } from '../utils/truncateText';
 
 export const metadata: Metadata = {
     title: 'Attivanse | Addons & Integrations',
@@ -55,7 +56,7 @@ export default function Addons() {
                                                     {card.title}
                                                 </h5>
                                                 <p className={clsx(worksans.className, "leading-relaxed text-base text-lightwhite")}>
-                                                    {card.description}
+                                                    {truncateText(card.description, 140)}
                                                 </p>
                                             </div>
                                             </Link>

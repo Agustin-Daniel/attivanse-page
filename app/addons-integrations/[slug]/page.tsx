@@ -1,12 +1,14 @@
 import { StarFill } from '@/app/components/ui/atoms/stars/StarFill';
+import { worksans } from '@/app/components/ui/fonts';
 import { addonsData } from '@/app/data/addonsData';
 import { getAddonBySlug } from '@/app/data/getAddonBySlug';
+import clsx from 'clsx';
 import Image from 'next/image';
+import React from 'react';
 
 
 export async function generateStaticParams() {
   const addons = await addonsData
-  console.log(addons);
   
   return addons.map((addon:any) => ({
         slug: addon.slug,
@@ -35,7 +37,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     //*agregar price
     
     const addon = getAddonBySlug(params.slug);
-
+    
 	return (
       <section className="overflow-hidden">
         <div className="container px-5 py-24 mx-auto flex flex-col items-center">
@@ -60,7 +62,16 @@ export default function Page({ params }: { params: { slug: string } }) {
                   <span className="ml-3">{ addon?.reviews }</span>
                 </span>
               </div>
-              <p className="leading-relaxed">{ addon?.description }</p>
+              <p className="leading-relaxed">
+              { 
+                addon?.description.split('/n').map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                )) 
+              }
+              </p>
               <section>
               <div className="mx-auto flex gap-16 py-16 flex-wrap">
                 {
@@ -81,8 +92,8 @@ export default function Page({ params }: { params: { slug: string } }) {
               </div>
             </section>
             <div className="flex mt-6 items-center border-b-2 border-gray-100 mb-5"></div>
-              <div className="flex">
-                <span className="font-medium text-2xl">{`$${addon?.price}`}</span>
+              <div className="flex items-center">
+                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-2xl h-fit')}>{`$${addon?.price}${addon?.monthly ? "/mes" : ""}`}</span>
                 <button className="flex ml-auto text-white bg-blue py-2 px-6 rounded hover:bg-white hover:text-black">Lo quiero!</button>
                 <button className="flex ml-4 text-white border-[1px] py-2 px-6 rounded hover:bg-white hover:text-black">Hablemos</button>
               </div>

@@ -21,7 +21,7 @@ export const addonsData:AddonData[] = [
         description: "Soporte técnico 24/7 para tu sitio web. Nuestro equipo de expertos está listo para ayudarte con cualquier problema que tengas con tu sitio web.",
         image: "/img/addons/addon-smart.png",
         slug: "smart-assist",
-        reviews: "23",
+        reviews: "123",
         list: [
             { title: "Soporte Premium", description: "Cada mes puede utilizar 3 horas de soporte premium para actualizaciones generales del sitio" },
             { title: "Descuentos en el mercado", description: "Reciba un 15% de descuento en todos los addons disponibles en la tienda!" },
@@ -33,14 +33,14 @@ export const addonsData:AddonData[] = [
     },
     {
         title: "Logo Design & Branding Guide",
-        description: "¿Listo para una cambio? Nuestro equipo de diseñadores gráficos creará un branding profesional para su empresa.",
+        description: "¿Listo para una cambio? Nuestro equipo de diseñadores gráficos creará un branding profesional para su empresa./n/nUna marca fuerte es la clave para el éxito de cualquier empresa, es lo primero que ven tus clientes potenciales y es lo que los hace decidir si confiar en ti o no./n/n¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-branding.png",
         slug: "branding-guide",
         reviews: "23",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Diseñado Profecional", description: "Solamente profecionales se encarganar del diseño de tu logo o marca." },
+            { title: "Elecciones", description: "Si no le conven" },
+            { title: "", description: "check" },
         ],
         price: 99,
         monthly: false
