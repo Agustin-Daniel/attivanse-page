@@ -59,7 +59,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   <StarFill />
                   <StarFill />
                   <StarFill />
-                  <span className="ml-3">{ addon?.reviews }</span>
+                  <span className="ml-3">{ addon?.reviews } Reviews</span>
                 </span>
               </div>
               <p className="leading-relaxed">
@@ -76,7 +76,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div className="mx-auto flex gap-16 py-16 flex-wrap">
                 {
                   addon?.list.map((addon, index) => (
-                <div key={index + addon.title} className="flex relative items-center">
+                <div key={index + addon.title} className="flex w-full relative items-center">
                   <div className="flex-grow flex sm:items-center items-start flex-col sm:flex-row">
                     <div className="flex-shrink-0 w-12 h-24 rounded-full inline-flex items-center justify-center">
                       <Image src="/img/icons/medal-green.png" alt="check-icon" width={81} height={81} />
@@ -93,7 +93,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </section>
             <div className="flex mt-6 items-center border-b-2 border-gray-100 mb-5"></div>
               <div className="flex items-center">
-                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-2xl h-fit')}>{`$${addon?.price}${addon?.monthly ? "/mes" : ""}`}</span>
+                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-xl h-fit')}>{`${addon?.price === "Free" ? "¡Gratis!" : addon?.price }${addon?.monthly ? "/mes" : ""}`}</span>
                 <button className="flex ml-auto text-white bg-blue py-2 px-6 rounded hover:bg-white hover:text-black">Lo quiero!</button>
                 <button className="flex ml-4 text-white border-[1px] py-2 px-6 rounded hover:bg-white hover:text-black">Hablemos</button>
               </div>

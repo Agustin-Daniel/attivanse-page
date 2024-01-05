@@ -11,7 +11,7 @@ interface AddonData {
     slug: string;
     reviews: string;
     list: ListItem[];
-    price: number;
+    price: number | string;
     monthly: boolean;
 }
 
@@ -21,13 +21,13 @@ export const addonsData:AddonData[] = [
         description: "Soporte técnico 24/7 para tu sitio web. Nuestro equipo de expertos está listo para ayudarte con cualquier problema que tengas con tu sitio web.",
         image: "/img/addons/addon-smart.png",
         slug: "smart-assist",
-        reviews: "123",
+        reviews: "72",
         list: [
             { title: "Soporte Premium", description: "Cada mes puede utilizar 3 horas de soporte premium para actualizaciones generales del sitio" },
             { title: "Descuentos en el mercado", description: "Reciba un 15% de descuento en todos los addons disponibles en la tienda!" },
             { title: "Servicio Prioritario", description: "¿quieres realizar un cambio de ultima hora? Tanquilo, tendras la prioridad que te mereces." },
         ],
-        price: 25,
+        price: "$25",
         monthly: true
 
     },
@@ -36,28 +36,28 @@ export const addonsData:AddonData[] = [
         description: "¿Listo para una cambio? Nuestro equipo de diseñadores gráficos creará un branding profesional para su empresa./n/nUna marca fuerte es la clave para el éxito de cualquier empresa, es lo primero que ven tus clientes potenciales y es lo que los hace decidir si confiar en ti o no./n/n¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-branding.png",
         slug: "branding-guide",
-        reviews: "23",
+        reviews: "57",
         list: [
-            { title: "Diseñado Profecional", description: "Solamente profecionales se encarganar del diseño de tu logo o marca." },
-            { title: "Elecciones", description: "Si no le conven" },
-            { title: "", description: "check" },
+            { title: "Diseñado Profecional", description: "Solamente profecionales especializados se encarganar del diseño de tu logo o marca." },
+            { title: "Opciones", description: "Se le presentaran varias variantes para elegir durante el proceso de generacion." },
+            { title: "Revisiones", description: "En todo momento se le preguntara si esta de acurdo con el progeso o si desea modificar algo." },
         ],
-        price: 99,
+        price: "$1100 Branding / $600 Logo",
         monthly: false
 
     },
     {
         title: "Click Maps",
-        description: "Lo haremos visible en el mapa de Google para que sus clientes potenciales puedan encontrarlo fácilmente.",
+        description: "Lo haremos visible en el mapa de Google para que sus clientes potenciales puedan encontrarlo fácilmente. /n/n Es fundamental que su empresa aparezca en el mapa de Google para que sus clientes estrella puedan encontrarlo fácilmente. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-clickmaps.png",
         slug: "click-maps",
-        reviews: "23",
+        reviews: "83",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Aparezca en el mapa", description: "Hoy en dia el 70% de las busquedas se hacen a travez de Google Maps." },
+            { title: "Optimizacion SEO", description: "Titulo, descripcion y keywords SEO optimizadas." },
+            { title: "Sea facil de encontrar", description: "Hubiquese entre los primeros cuando se realize una busqueda." },
         ],
-        price: 99,
+        price: "Free",
         monthly: false
 
     },
