@@ -63,181 +63,175 @@ export const addonsData:AddonData[] = [
     },
     {
         title: "Page Content Writing",
-        description: "Expertos en SEO y Copywriting escribirán el contenido de su sitio web para que pueda obtener más clientes potenciales y ventas.",
+        description: "Expertos en SEO y Copywriting escribirán el contenido de las paginas nuevas que quiera agregar de su sitio web para que pueda obtener más clientes potenciales y ventas. /n/n El contenido es el rey. Es lo que hace que su sitio web sea visible en Google y lo que convierte a sus visitantes en clientes potenciales. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-page-content.png",
         slug: "page-content-writing",
-        reviews: "23",
+        reviews: "72",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Posicionamiento de palabras clave", description: "" },
+            { title: "Captura de clientes potenciales", description: "" },
+            { title: "Sitio web mas visible", description: "" },
         ],
-        price: 99,
+        price: "$50/page",
         monthly: false
 
     },
     {
         title: "Blog Assist Writing",
-        description: "Expertos en SEO y Copywriting escribirán blogs para su sitio web para que pueda obtener más clientes potenciales y ventas.",
+        description: "Expertos en SEO y Copywriting escribirán blogs para su sitio web para que pueda obtener más clientes potenciales y ventas. /n/n El contenido es el rey. Es lo que hace que su sitio web sea visible en Google y lo que convierte a sus visitantes en clientes potenciales. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-blog-assist.png",
         slug: "blog-assist-writing",
-        reviews: "23",
+        reviews: "93",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Posicionamiento de palabras clave", description: "" },
+            { title: "Captura de clientes potenciales", description: "" },
+            { title: "Sitio web mas visible", description: "" },
         ],
-        price: 99,
+        price: "$30/article",
         monthly: false
 
     },
     {
         title: "ADA Protect",
-        description: "¡Una empresa inclusiva! Hacemos que su sitio web sea accesible para personas con discapacidades visuales y auditivas.",
+        description: "¡Una empresa inclusiva! Hacemos que su sitio web sea accesible para personas con discapacidades visuales y auditivas. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-ada-protect.png",
         slug: "ada-protect",
-        reviews: "23",
+        reviews: "52",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Empresa inclusiva", description: "Su web sera accesible para personas con discapacidades." },
+            { title: "Reputacion", description: "Su empresa sera bien vista a los ojos de los demas." },
+            { title: "Instalacion personalizada", description: "El diseño del addon sera adaptado a los colores de su marca!" },
         ],
-        price: 99,
-        monthly: false
+        price: "$10",
+        monthly: true
 
     },
     {
         title: "Custom Forms",
-        description: "Agregue formularios personalizados de cualquier tipo a su sitio web para capturar clientes potenciales.",
+        description: "Agregue formularios personalizados de cualquier tipo a su sitio web para capturar clientes potenciales. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-custom-forms.png",
         slug: "custom-forms",
-        reviews: "23",
+        reviews: "63",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Instalacion personalizada", description: "El diseño del addon sera adaptado a los colores de su marca!" },
+            { title: "Mayor eficiencia", description: "Los formularios haran el proceso de venta mas eficiente." },
+            { title: "El cielo es el limite", description: "Podemos realizar cualquier tipo de formulario." },
         ],
-        price: 99,
+        price: "A partir de $25",
         monthly: false
 
     },
     {
         title: "Hyperlocal Website",
-        description: "Posiciona tu sitio web en los primeros lugares de idiomas especificos para que tus clientes puedan encontrarte fácilmente.",
+        description: "Posiciona tu sitio web en los primeros lugares de idiomas especificos para que tus clientes puedan encontrarte fácilmente. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-hyperlocal-website.png",
         slug: "hyperlocal-website",
-        reviews: "23",
+        reviews: "73",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Mas ventas", description: "Cierre mas ventas al ser visible en mas paises." },
+            { title: "Rompe fronteras", description: "Rompa las barreras que pueda ocacionar el idioma." },
+            { title: "Mas precensia en linea", description: "Sea visible en los buscadores de todo el mundo." },
         ],
-        price: 99,
+        price: "$99/idioma",
         monthly: false
 
     },
     {
         title: "RSS To Mailchimp",
-        description: "Conecte su sitio web con Mailchimp para que pueda enviar correos electrónicos a sus clientes potenciales.",
+        description: "Conecte su sitio web con Mailchimp para que pueda enviar correos electrónicos a sus clientes potenciales. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-rrs-mailchimp.png",
         slug: "rss-to-mailchimp",
         reviews: "23",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Correos electronicos automaticos", description: "" },
+            { title: "Captura de clientes potenciales", description: "" },
+            { title: "Estrategia de marketing", description: "" },
         ],
-        price: 99,
-        monthly: false
+        price: "$20",
+        monthly: true
 
     },
     {
         title: "Make Reservations",
-        description: "Organiza reuniones directamente desde tu sitio web con Calendly ¡No más correos electrónicos de ida y vuelta!",
+        description: "Organiza reuniones directamente desde tu sitio web con Calendly ¡No más correos electrónicos de ida y vuelta! /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-make-reservations.png",
         slug: "make-reservations",
-        reviews: "23",
+        reviews: "56",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Citas con un click", description: "Los clientes potenciales pueden agendar citas facilmente desde la web." },
+            { title: "Mejora la eficiencia", description: "Reduce los tiempos y la friccion en conversaciones" },
+            { title: "Facil de usar", description: "Es pan comido! te lo explicaremos a detalle." },
         ],
-        price: 99,
+        price: "Precio a acordar",
         monthly: false
 
     },
     {
         title: "Social Management",
-        description: "Chat en vivo, respuestas automaticas y mucho mas con nuestro servicio de social management.",
+        description: "Chat en vivo, respuestas automaticas y mucho mas con nuestro servicio de social management. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-social-management.png",
         slug: "social-management",
-        reviews: "23",
+        reviews: "63",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Chat bot de preferencia", description: "Hay varios planes y presupuestos que se amoldan a las necesidades de tu empresa." },
+            { title: "Responde de manera automatica", description: "Puede asignar preguntas o palabras claves con respuestas predeterminadas." },
+            { title: "Mejora la eficiencia", description: "Es un bot que responde solo a las consultas, asi que no tendras que preocuparte por nada."},
         ],
-        price: 99,
+        price: "Precio a acordar",
         monthly: false
 
     },
     {
         title: "Instagram Feed",
-        description: "Muestre su feed de Instagram en su sitio web para que sus clientes puedan ver sus últimas publicaciones.",
+        description: "Muestre su feed de Instagram en su sitio web para que sus clientes puedan ver sus últimas publicaciones. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-instagram.png",
         slug: "instagram-feed",
-        reviews: "23",
+        reviews: "24",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Facil instalacion", description: "Tendra su feed lista rapidamente!" },
+            { title: "Marketing", description: "El poner la feed es una buena estrategia de marketing." },
         ],
-        price: 99,
+        price: "Free",
         monthly: false
 
     },
     {
         title: "Facebook Live Chat",
-        description: "Hable con sus clientes potenciales en tiempo real con nuestro servicio de chat en vivo de Facebook.",
+        description: "Hable con sus clientes potenciales en tiempo real con nuestro servicio de chat en vivo de Facebook. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-facebook.png",
         slug: "facebook-live-chat",
-        reviews: "23",
+        reviews: "12",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Facil instalacion", description: "Tendra su chat listo rapidamente!" },
+            { title: "Marketing", description: "El poner un chat desde la web es una buena estrategia de marketing." },
         ],
-        price: 99,
+        price: "Free",
         monthly: false
 
     },
     {
         title: "ShowReviews",
-        description: "Muestre las reseñas de Google en su sitio web para generar confianza en sus clientes potenciales.",
+        description: "Muestre las reseñas de Google en su sitio web para generar confianza en sus clientes potenciales. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-reviews.png",
         slug: "showreviews",
-        reviews: "23",
+        reviews: "39",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
+            { title: "Buena estrategia de marketing", description: "" },
+            { title: "Genera confianza", description: "" },
         ],
-        price: 99,
+        price: "Free",
         monthly: false
 
     },
     {
         title: "More Addons",
-        description: "¿Necesitas algo más? ¡Contáctanos! Podemos hacer cualquier cosa que necesites para tu sitio web empresarial.",
+        description: "¿Necesitas algo más? ¡Contáctanos! Podemos hacer cualquier cosa que necesites para tu sitio web empresarial. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-plus.png",
         slug: "more-addons",
-        reviews: "23",
+        reviews: "123",
         list: [
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
-            { title: "Sitio web ultra rápido", description: "check" },
         ],
-        price: 99,
+        price: "Hablemos!",
         monthly: false
 
     },

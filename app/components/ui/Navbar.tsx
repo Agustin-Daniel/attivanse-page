@@ -1,10 +1,13 @@
 'use client'
 import Image from 'next/image'
 import { BurgerSVG } from './icons';
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ScrollContext } from '@/app/context/ScrollContext';
+import { cn } from '@/lib/utils';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 
     const animationPropsBurger = {
@@ -25,10 +28,17 @@ export const Navbar = () => {
 
     const pathname = usePathname();
 
+    const scrollPosition = useContext(ScrollContext);
+
     const [burger, setBurger] = useState(false)
 
+    const isTablet = useMediaQuery('(max-width: 1024px)');
+
   return (
-    <nav className='z-10 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16'>
+    <nav className={cn(
+        'z-10 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16',
+        isTablet && scrollPosition > 485 && 'fixed top-0 py-3 bg-black'
+    )}>
         <Link href="/"><Image className='lg:h-[46px] lg:w-[240px]'  width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
         <button className='focus:outline-none lg:hidden'>
         <div onClick={() => setBurger(true)}><BurgerSVG /></div>

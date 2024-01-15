@@ -56,7 +56,7 @@ export default function Addons() {
                                                     {card.title}
                                                 </h5>
                                                 <p className={clsx(worksans.className, "leading-relaxed text-base text-lightwhite")}>
-                                                    {truncateText(card.description, 140)}
+                                                    {truncateText(card.description, 105)}
                                                 </p>
                                             </div>
                                             </Link>
