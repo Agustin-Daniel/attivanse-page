@@ -168,7 +168,7 @@ export const addonsData:AddonData[] = [
     },
     {
         title: "Social Management",
-        description: "Chat en vivo, respuestas automaticas y mucho mas con nuestro servicio de social management. /n/n ¡Aqui estamos para ayudarte!",
+        description: "Chat en vivo, respuestas automaticas, preguntas frecuentes y mucho mas con nuestro servicio de social management. /n/n ¡Aqui estamos para ayudarte!",
         image: "/img/addons/addon-social-management.png",
         slug: "social-management",
         reviews: "63",

@@ -1,4 +1,5 @@
 "use client"
+import { useIsSmall } from '@/hooks/utils/utils';
 import { motion, Variants, MotionProps, Transition } from 'framer-motion';
 
 interface MotionPProps {
@@ -16,16 +17,22 @@ interface MotionPProps {
 
 
 const MotionP: React.FC<MotionPProps> = ({ variants, whileInView="animation", viewport, custom, initial="initial", children, className, style, id, transition }) => {
+
+
+  const isMobile = useIsSmall()
+
+
   return (
     <motion.p 
+        key={isMobile.toString()}
         id={id}
         className={className}
         variants={variants}
-        whileInView={whileInView}
+        whileInView={isMobile ? "" : whileInView}
         transition={transition}
         viewport={viewport}
         custom={custom}
-        initial={initial}
+        initial={isMobile ? "" : initial}
         style={style}
     >
       { children }

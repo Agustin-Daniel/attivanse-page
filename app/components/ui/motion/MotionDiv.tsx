@@ -1,4 +1,5 @@
 "use client"
+import { useIsSmall } from '@/hooks/utils/utils';
 import { motion, Variants, MotionProps, Transition } from 'framer-motion';
 
 interface ParentComponentProps {
@@ -31,20 +32,23 @@ const MotionDiv: React.FC<ParentComponentProps> = ({ children, variants, animate
     }),
   };
 
+  const isMobile = useIsSmall()
+
   const realVariants = !!variants ? variants : waterfall
 
 
   return (
     <motion.div
+        key={isMobile.toString()}
         id={id}
         className={className}
         variants={realVariants}
-        whileInView={whileInView}
+        whileInView={isMobile ? "" : whileInView}
         transition={transition}
-        animate={animate}
+        animate={isMobile ? "" : animate}
         custom={custom}
         viewport={viewport}
-        initial={initial}
+        initial={isMobile ? "" : initial}
         style={style}
     >
       {children}

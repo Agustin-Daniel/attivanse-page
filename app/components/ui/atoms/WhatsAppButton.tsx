@@ -15,7 +15,7 @@ export const WhatsAppButton = () => {
     <div>
         <motion.a
             className="flex bg-[rgb(59,141,56)] items-center justify-center w-16 h-16 rounded-s-full fixed bottom-2 left-2 opacity-70 z-50 scale-75 rounded-full xl:bottom-[25px] xl:left-[25px] xl:scale-100"
-            href="https://api.whatsapp.com/send?phone=5491123046784"
+            href="https://api.whatsapp.com/send?phone=5491144948334"
             rel="noreferrer"
             target='_blank'
             {...AnimatedProps}

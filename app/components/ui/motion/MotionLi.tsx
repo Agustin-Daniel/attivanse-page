@@ -1,4 +1,5 @@
 "use client"
+import { useIsSmall } from '@/hooks/utils/utils';
 import { motion, Variants, MotionProps, Transition } from 'framer-motion';
 
 interface MotionliProps {
@@ -32,18 +33,21 @@ const Motionli: React.FC<MotionliProps> = ({ variants, whileInView="animation", 
 
     const realVariants = !!variants ? variants : waterfall
 
+    const isMobile = useIsSmall()
+
 
 
   return (
     <motion.li
+        key={isMobile.toString()}
         id={id} 
         className={className}
         variants={realVariants}
-        whileInView={whileInView}
+        whileInView={isMobile ? "" : whileInView}
         transition={transition}
         viewport={viewport}
         custom={custom}
-        initial={initial}
+        initial={isMobile ? "" : initial}
         style={style}
     >
       { children }

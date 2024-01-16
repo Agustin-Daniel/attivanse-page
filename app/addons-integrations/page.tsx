@@ -18,6 +18,7 @@ export default function Addons() {
     
     //*agregar price
     const cards = addonsData;
+    
 
 	return (
             <>
@@ -35,10 +36,10 @@ export default function Addons() {
                                     <MotionDivAddons
                                         key={i + card.title}
                                         className="p-4 w-full 530:w-1/2 lg:w-1/3 max-w-[600px]"
-                                        animate="visible"
+                                        animate=""
                                         viewport={{ once: true }}
                                         custom={i}
-                                        initial="hidden"
+                                        initial=""
                                     >
                                         <div className='cursor-pointer active:cursor-grab border-[1px] border-coldgray rounded-lg'>
                                             <Link href={`/addons-integrations/${card.slug}`}>
@@ -56,7 +57,7 @@ export default function Addons() {
                                                     {card.title}
                                                 </h5>
                                                 <p className={clsx(worksans.className, "leading-relaxed text-base text-lightwhite")}>
-                                                    {truncateText(card.description, 105)}
+                                                    {truncateText(card.description, 100)}
                                                 </p>
                                             </div>
                                             </Link>

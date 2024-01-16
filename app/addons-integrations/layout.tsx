@@ -13,7 +13,7 @@ export default function RootLayout({
 
     const variants =
     {
-        initialMobile: { opacity: 0, x: 0, y: 0 },
+        // initialMobile: { opacity: 0, x: 0, y: 0 },
         initialDeskop: { opacity: 0, x: 0, y: -200 },
         enter: { opacity: 1, x: 0, y: 0 },
     }
@@ -24,8 +24,8 @@ export default function RootLayout({
         <motion.section
             key={isMobile.toString()}
             variants={variants}
-            initial={isMobile ? "initialMobile" : "initialDeskop"}
-            animate="enter"
+            initial={isMobile ? "" : "initialDeskop"}
+            animate={isMobile ? "" : "enter"}
             transition={{ type: 'linear', duration: 1 }}
             className="text-gray-600 body-font pt-24"
         >
