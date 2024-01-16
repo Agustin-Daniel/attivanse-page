@@ -28,7 +28,13 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
       openGraph: {
         title: `Attivanse | ${addon?.title} Addon`,
         description: addon?.description,
-        images: addon?.image,
+        images: [
+          {
+            url: addon?.image,
+            width: 600,
+            height: 280,
+          }
+        ]
       }
       //! hacer por imagenes o arreglar el error de que no se vean las imagenes
   };
