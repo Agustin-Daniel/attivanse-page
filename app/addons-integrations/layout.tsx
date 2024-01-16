@@ -23,6 +23,7 @@ export default function RootLayout({
     <main className="flex bg-black justify-center z-20">
         <motion.section
             key={isMobile.toString()}
+            id={isMobile.toString()}
             variants={variants}
             initial={isMobile ? "" : "initialDeskop"}
             animate={isMobile ? "" : "enter"}

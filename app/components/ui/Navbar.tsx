@@ -37,7 +37,7 @@ export const Navbar = () => {
   return (
     <nav className={cn(
         'z-50 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16',
-        isTablet && scrollPosition > 485 && 'fixed top-0 py-10 bg-black'
+        isTablet && scrollPosition > 0 && 'fixed top-0 py-10 bg-black navbar-animate',
     )}>
         <Link href="/"><Image className='lg:h-[46px] lg:w-[240px]'  width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
         <button className='focus:outline-none lg:hidden'>

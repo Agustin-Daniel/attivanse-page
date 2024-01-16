@@ -26,6 +26,8 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
       keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios",
       category: 'technology',
       openGraph: {
+        title: `Attivanse | ${addon?.title} Addon`,
+        description: addon?.description,
         images: addon?.image,
       }
       //! hacer por imagenes o arreglar el error de que no se vean las imagenes

@@ -10,7 +10,11 @@ import { truncateText } from '../utils/truncateText';
 export const metadata: Metadata = {
     title: 'Attivanse | Addons & Integrations',
     description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!",
-    keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios"
+    keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios",
+    openGraph: {
+        title: 'Attivanse | Addons & Integrations',
+        description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!",
+    }
 }
 
 
@@ -36,10 +40,10 @@ export default function Addons() {
                                     <MotionDivAddons
                                         key={i + card.title}
                                         className="p-4 w-full 530:w-1/2 lg:w-1/3 max-w-[600px]"
-                                        animate=""
+                                        animate="visible"
                                         viewport={{ once: true }}
                                         custom={i}
-                                        initial=""
+                                        initial="hidden"
                                     >
                                         <div className='cursor-pointer active:cursor-grab border-[1px] border-coldgray rounded-lg'>
                                             <Link href={`/addons-integrations/${card.slug}`}>

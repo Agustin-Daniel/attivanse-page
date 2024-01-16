@@ -35,7 +35,7 @@ const MotionDivAddons: React.FC<ParentComponentProps> = ({ children, animate, in
 
   return (
     <motion.div
-        key={isMobile.toString()}
+        key={id + isMobile.toString()}
         id={id}
         className={className}
         variants={variants}
