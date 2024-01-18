@@ -36,13 +36,10 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
           }
         ]
       }
-      //! hacer por imagenes o arreglar el error de que no se vean las imagenes
   };
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-    
-    //*agregar price
     
     const addon = getAddonBySlug(params.slug);
     

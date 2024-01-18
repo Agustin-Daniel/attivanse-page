@@ -11,10 +11,11 @@ type Prop = {
     img:string,
     price:{base:string, monthly:string},
     description:string,
-    features:string[]
+    features:string[],
+    link:string
 }
 
-export const PriceCard = ({title, img, price, description, features, premium, popular}: Prop) => {
+export const PriceCard = ({title, img, price, description, features, premium, popular, link}: Prop) => {
 
 
   return (
@@ -45,7 +46,8 @@ export const PriceCard = ({title, img, price, description, features, premium, po
         <a
             role="button"
             className="btn-primary py-4 px-[59px] mt-9"
-            href="#contacto"
+            target="_blank"
+            href={link}
             aria-label="Hablemos de tu web"
         >
             Hablemos de tu web!

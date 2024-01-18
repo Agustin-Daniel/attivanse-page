@@ -14,7 +14,8 @@ const cards = [
             "Rapido lanzamiento",
             "Personalizado con tu marca",
             "Formulario personalizado"
-        ]
+        ],
+        link: "https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20modelo%20de%20desarrollo%20web%20STARTER%20"
     },
     {
         title:"SEMI-CUSTOM",
@@ -27,7 +28,8 @@ const cards = [
             "Posicionamiento web internacional",
             "Página de inicio personalizada",
             "Diseñador senior dedicado",
-        ]
+        ],
+        link: "https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20modelo%20de%20desarrollo%20web%20SEMI-CUSTOM%20"
     },
     {
         title:"CUSTOM",
@@ -40,7 +42,8 @@ const cards = [
             "Página de inicio a medida",
             "10 páginas interiores personalizadas",
             "Diseñador senior dedicado"
-        ]
+        ],
+        link: "https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20modelo%20de%20desarrollo%20web%20CUSTOM%20"
     },
 ]
 

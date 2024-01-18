@@ -32,8 +32,8 @@ export const Contact = () => {
           Nuestro unico objetivo es ayudarlo a crecer y posicionarse globalmente
         </p>
         <div className='flex justify-center gap-2 sm:gap-4 lg:gap-8'>
-          <button className="btn-primary">Hablemos!</button>
-          <button className="btn-secondary">Email</button>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=541144948334"><button className="btn-primary">Hablemos!</button></a>
+          <a href="mailto:hello@attivanse.com?subject=CONSULTA%20WEB%20😃"><button className="btn-secondary">Email</button></a>
         </div>
       </MotionDiv>
     </section>
