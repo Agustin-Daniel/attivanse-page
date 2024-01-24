@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/img/attivanse-og.png",
-        width: 1200,
-        height: 600,
+        width: 601,
+        height: 301,
         alt: "attivanse-og-image",
       }
     ],
