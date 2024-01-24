@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones!",
     images: [
       {
-        url: "/images/attivanse-og-image.png",
+        url: "/img/attivanse-og-image.png",
         width: 1200,
         height: 600,
         alt: "attivanse-og-image",
