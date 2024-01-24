@@ -9,7 +9,7 @@ export const CircleLine = ({	scrollNumber = { mobile: 0, desktop: 0 },
 
 
 	const scrollPosition = useContext(ScrollContext);
-    console.log(scrollPosition);
+    // console.log(scrollPosition);
 	
 
   return (

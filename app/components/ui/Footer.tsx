@@ -23,7 +23,7 @@ export const Footer = () => {
           <section className="flex flex-col gap-2">
             <h3 className="text-base font-medium">Contáctanos</h3>
             <ul className="flex flex-col gap-4">
-              <li className="text-sm font-normal"><a target="_blank" href="https://api.whatsapp.com/send?phone=541144948334">+54-11-44948334</a></li>
+              <li className="text-sm font-normal"><a target="_blank" href="https://api.whatsapp.com/send?phone=541144948334&text=Hola%20Attivanse!%20😃%20">+54-11-44948334</a></li>
               <li className="text-sm font-normal"><a href="mailto:hello@attivanse.com?subject=CONSULTA%20WEB%20😃">hello@attivanse.com</a></li>
             </ul>
           </section>

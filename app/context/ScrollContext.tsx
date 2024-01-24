@@ -13,7 +13,7 @@ export const ScrollProvider = ({ children }:ScrollProviderProps) => {
 
     const debouncedHandleScroll = useDebouncedCallback(() => {
         setScrollPosition(window.scrollY);
-        console.log(scrollPosition);
+        // console.log(scrollPosition);
         
     }, 50); // 300ms debounce
 
