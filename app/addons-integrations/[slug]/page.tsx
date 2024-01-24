@@ -25,7 +25,7 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
   const description = addon?.description ? truncateText(addon?.description, 100) : "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!";
 
 
-  return {
+  return { 
       title: `Attivanse | ${addon?.title} Addon`,
       description: addon?.description,
       keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios",
@@ -33,15 +33,18 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
       openGraph: {
         title: `Attivanse | ${addon?.title} Addon`,
         description: description,
+        url: `/addons-integrations/${addon?.slug}`,
+        siteName: 'Attivanse',
         images: [
           {
             url: addon?.image,
             width: 600,
             height: 280,
-            alt: `${addon?.title}`,
+            alt: `${addon?.title} addon image`,
+            origin: "https://attivanse.com",
           }
         ],
-        type: 'website',
+        type: 'article',
       }
   };
 }

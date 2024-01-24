@@ -14,13 +14,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Attivanse | Addons & Integrations',
         description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones!",
+        url: "/addons-integrations",
+        siteName: 'Attivanse',
         images: [
           {
             url: "/img/attivanse-og.png",
             width: 600,
             height: 300,
             alt: "attivanse-og-image",
-            pathname: "/addons-integrations",
             origin: "https://attivanse.com",
           }
         ],
