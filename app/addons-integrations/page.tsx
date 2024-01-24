@@ -16,10 +16,12 @@ export const metadata: Metadata = {
         description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones!",
         images: [
           {
-            url: "/images/attivanse-og.png",
-            width: 1200,
-            height: 600,
+            url: "/img/attivanse-og.png",
+            width: 600,
+            height: 300,
             alt: "attivanse-og-image",
+            pathname: "/addons-integrations",
+            origin: "https://attivanse.com",
           }
         ],
         type: 'website',

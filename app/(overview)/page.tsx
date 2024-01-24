@@ -20,9 +20,11 @@ export const metadata: Metadata = {
 	  images: [
 		{
 		  url: "/img/attivanse-og.png",
-		  width: 601,
-		  height: 301,
+		  width: 600,
+		  height: 300,
 		  alt: "attivanse-og-image",
+		  pathname: "/",
+		  origin: "https://attivanse.com",
 		}
 	  ],
 	  type: 'website',
