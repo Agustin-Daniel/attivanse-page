@@ -27,17 +27,17 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
 
   return { 
       title: `Attivanse | ${addon?.title} Addon`,
-      description: addon?.description,
+      description: description,
       keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios",
       category: 'technology',
       openGraph: {
         title: `Attivanse | ${addon?.title} Addon`,
         description: description,
-        url: `/addons-integrations/${addon?.slug}`,
+        url: `https://attivanse.com/addons-integrations/${addon?.slug}`,
         siteName: 'Attivanse',
         images: [
           {
-            url: addon?.image,
+            url: `https://attivanse.com${addon?.image}`,
             width: 600,
             height: 280,
             alt: `${addon?.title} addon image`,
