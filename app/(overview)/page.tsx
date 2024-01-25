@@ -7,7 +7,6 @@ import { Contact } from "../components/ui/Contact";
 import { FAQ } from "../components/ui/FAQ";
 import { Benefecios } from "../components/ui/BeneficiosSection/Benefecios";
 import { Tools } from "../components/ui/ToolsSection/Tools";
-import { Metadata } from "next";
 
 
 export default function Home() {
