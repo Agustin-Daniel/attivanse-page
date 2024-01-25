@@ -41,7 +41,6 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
             width: 600,
             height: 280,
             alt: `${addon?.title} addon image`,
-            origin: "https://attivanse.com",
           }
         ],
         type: 'article',

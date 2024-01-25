@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 		  width: 600,
 		  height: 300,
 		  alt: "attivanse-og-image",
-		  origin: "https://attivanse.com",
 		}
 	  ],
 	  type: 'website',
