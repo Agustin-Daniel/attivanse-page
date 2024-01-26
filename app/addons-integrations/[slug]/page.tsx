@@ -87,29 +87,33 @@ export default function Page({ params }: { params: { slug: string } }) {
               }
               </p>
               <section>
-              <div className="mx-auto flex gap-16 py-16 flex-wrap">
-                {
-                  addon?.list.map((addon, index) => (
-                <div key={index + addon.title} className="flex w-full relative items-center">
-                  <div className="flex-grow flex sm:items-center items-start flex-col sm:flex-row">
-                    <div className="flex-shrink-0 w-12 h-24 rounded-full inline-flex items-center justify-center">
-                      <Image src="/img/icons/medal-green.png" alt="check-icon" width={81} height={81} />
+              {
+              addon?.list &&
+                <div className="mx-auto flex gap-16 pt-16 flex-wrap">
+                  {
+                    addon?.list.map((addon, index) => (
+                  <div key={index + addon.title} className="flex w-full relative items-center">
+                    <div className="flex-grow flex sm:items-center items-start flex-col sm:flex-row">
+                      <div className="flex-shrink-0 w-12 h-24 rounded-full inline-flex items-center justify-center">
+                        <Image src="/img/icons/medal-green.png" alt="check-icon" width={81} height={81} />
+                      </div>
+                      <div className="flex-grow sm:pl-6 sm:mt-0">
+                        <h3 className="font-medium mb-1 text-xl text-[#FEBD29]">{ addon.title }</h3>
+                        <p className="leading-relaxed">{ addon.description }</p>
+                      </div>
                     </div>
-                    <div className="flex-grow sm:pl-6 sm:mt-0">
-                      <h3 className="font-medium mb-1 text-xl text-[#FEBD29]">{ addon.title }</h3>
-                      <p className="leading-relaxed">{ addon.description }</p>
-                    </div>
-                  </div>
-                </div>))
-                }
-
-              </div>
+                  </div>))
+                  }
+                </div>
+              }
             </section>
-            <div className="flex mt-6 items-center border-b-2 border-gray-100 mb-5"></div>
-              <div className="flex items-center">
-                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-xl h-fit')}>{`${addon?.price === "Free" ? "¡Gratis!" : addon?.price }${addon?.monthly ? "/mes" : ""}`}</span>
-                <a className='ml-auto' target="_blank" href={`https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20addon%20${addon?.title}%20`}><button className="flex text-white bg-blue py-2 px-6 rounded hover:bg-white hover:text-black">Lo quiero!</button></a>
-                <a href="mailto:hello@attivanse.com?subject=CONSULTA%20WEB%20😃"><button className="flex ml-4 text-white border-[1px] py-2 px-6 rounded hover:bg-white hover:text-black">Hablemos</button></a>
+            <div className="flex mt-16 items-center border-b-2 border-gray-100 mb-5"></div>
+              <div className="flex items-center justify-between flex-wrap gap-y-1">
+                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-xl h-fit clamp')}>{`${addon?.price === "Free" ? "¡Gratis!" : addon?.price }${addon?.monthly ? "/mes" : ""}`}</span>
+                <div className='flex'>
+                  <a target="_blank" href={`https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20addon%20${addon?.title}%20`}><button className="flex w-max text-white border-[1px] border-blue hover:border-white bg-blue py-2 px-6 rounded hover:bg-white hover:text-black">Lo quiero!</button></a>
+                  <a href="mailto:hello@attivanse.com?subject=CONSULTA%20WEB%20😃"><button className="flex ml-4 text-white border-[1px] py-2 px-6 rounded hover:bg-white hover:text-black">Hablemos</button></a>
+                </div>
               </div>
             </div>
           </div>

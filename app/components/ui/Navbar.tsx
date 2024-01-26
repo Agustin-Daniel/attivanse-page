@@ -39,7 +39,7 @@ export const Navbar = () => {
         'z-50 w-full max-w-[1920px] top-10 px-6 absolute flex items-center justify-between md:px-12 lg:pl-28 lg:pr-40 lg:top-16',
         isTablet && scrollPosition > 0 && 'fixed top-0 py-4 bg-black navbar-animate',
     )}>
-        <Link href="/"><Image className='lg:h-[46px] lg:w-[240px]'  width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
+        <Link href="/"><Image className='h-[46px] w-[240px]'  width={300} height={57} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
         <button className='focus:outline-none lg:hidden'>
         <div onClick={() => setBurger(true)}><BurgerSVG /></div>
         </button>
@@ -71,7 +71,7 @@ export const Navbar = () => {
             burger &&
                 <motion.div {...animationPropsBurger} className='flex fixed flex-col gap-10 bg-gray pt-10 px-6 top-0 left-0 h-[100vh] w-full md:px-12 lg:hidden'>
                 <div className='flex justify-between items-center'>
-                    <Image className='cursor-pointer lg:h-[46px] lg:w-[240px]'  width={264} height={51} alt='logo-attivanse' src="/img/attivanse-logo.png" />
+                    <Link href="/" onClick={() => setBurger(false)}><Image className='cursor-pointer h-[46px] w-[240px]'  width={300} height={57} alt='logo-attivanse' src="/img/attivanse-logo.png" /></Link>
                     <div className='cursor-pointer' onClick={() => setBurger(false)}><BurgerSVG /></div>
                 </div>
                 <ul className='flex flex-col text-lg font-medium'>

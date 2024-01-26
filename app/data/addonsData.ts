@@ -10,7 +10,7 @@ interface AddonData {
     image: string;
     slug: string;
     reviews: string;
-    list: ListItem[];
+    list?: ListItem[];
     price: number | string;
     monthly: boolean;
 }
@@ -42,7 +42,7 @@ export const addonsData:AddonData[] = [
             { title: "Opciones", description: "Se le presentaran varias variantes para elegir durante el proceso de generacion." },
             { title: "Revisiones", description: "En todo momento se le preguntara si esta de acurdo con el progeso o si desea modificar algo." },
         ],
-        price: "$1100 Branding / $600 Logo",
+        price: "A acordar",
         monthly: false
 
     },
@@ -162,7 +162,7 @@ export const addonsData:AddonData[] = [
             { title: "Mejora la eficiencia", description: "Reduce los tiempos y la friccion en conversaciones" },
             { title: "Facil de usar", description: "Es pan comido! te lo explicaremos a detalle." },
         ],
-        price: "Precio a acordar",
+        price: "A acordar",
         monthly: false
 
     },
@@ -177,7 +177,7 @@ export const addonsData:AddonData[] = [
             { title: "Responde de manera automatica", description: "Puede asignar preguntas o palabras claves con respuestas predeterminadas." },
             { title: "Mejora la eficiencia", description: "Es un bot que responde solo a las consultas, asi que no tendras que preocuparte por nada."},
         ],
-        price: "Precio a acordar",
+        price: "A acordar",
         monthly: false
 
     },
@@ -229,9 +229,7 @@ export const addonsData:AddonData[] = [
         image: "/img/addons/addon-plus.png",
         slug: "more-addons",
         reviews: "123",
-        list: [
-        ],
-        price: "Hablemos!",
+        price: "",
         monthly: false
 
     },
