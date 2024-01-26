@@ -1,2 +1,2 @@
-Usuario-Agente: *
- Permitir: /
+User-agent: *
+Allow: /
