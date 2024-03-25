@@ -6,7 +6,7 @@ import { SwiperTools } from './SwiperTools';
 export const Tools = () => {
 
 	return (
-		<section id='tecnologia' className="text-gray-600 body-font bg-black pt-24">
+		<section id='tecnologia' className="text-gray-600 body-font bg-black lg:pt-24">
 			<div className="container px-5 pb-24 mx-auto">
 				<div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
 					<h2 className="mb-2 lg:lg:text-5xl font-bold">

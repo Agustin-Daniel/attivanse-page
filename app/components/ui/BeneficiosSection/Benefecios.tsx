@@ -6,7 +6,7 @@ import { SwiperBeneficios } from './SwiperBeneficios';
 export const Benefecios = () => {
 
 	return (
-		<section id='beneficios' className="body-font bg-black lg:pt-24">
+		<section id='beneficios' className="body-font bg-black pt-12 lg:pt-24">
 			<div className="w-[90%] max-w-[1450px] pb-24 mx-auto">
 				<div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
 					<h2 className="mb-2 lg:lg:text-5xl font-bold">
