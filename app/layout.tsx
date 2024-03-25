@@ -8,7 +8,6 @@ import { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-  // metadataBase: new URL('https://attivanse.com'),
 	title: 'Attivanse | Diseño web para Empresas',
 	description: "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas ¡Descubre cómo optimizar tu presencia digital con nosotros!",
 	keywords: "diseño web, diseño web para empresas, diseño web para industrias, diseño web para fábricas, diseño web para pymes, diseño web para emprendedores, diseño web para negocios, diseño web para comercios, diseño web para tiendas online, diseño web para ecommerce, diseño web para profesionales, diseño web para servicios",

@@ -15,9 +15,9 @@ export default function Home() {
 			<Header />
 			<Servicios />
 			<Tools />
-			<Metodologia />
+			{/* <Metodologia /> */}
 			<CasoDeEstudio />
-			<Pricing />
+			{/* <Pricing /> */}
 			<Benefecios />
 			<Contact />
 			<FAQ />

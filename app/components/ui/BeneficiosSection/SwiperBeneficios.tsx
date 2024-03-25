@@ -44,7 +44,7 @@ const cards = [
     },
     {
         title: "Sofware a Medida",
-        description: "Podemos crear literalmente LO QUE SEA, hasta si lo dea una pagina como Netflix.",
+        description: "Podemos crear literalmente LO QUE SEA, hasta si lo desea una pagina como Netflix.",
         // image: "image"
     }, 
 ]

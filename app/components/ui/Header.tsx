@@ -40,7 +40,7 @@ export const Header = () => {
 					initial="hidden"
 				>
 					<h1 className="lg:w-[630px]">
-						Tu empresa posicionada internacionalmente
+						Tu fabrica con vista internacional
 						{/* Existimos para ayudar a nuestros clientes a crecer */}
 						{/* Tu empresa a la vista de todo el mundo */}
 						{/* Cierra ventas al rededor del mundo */}
