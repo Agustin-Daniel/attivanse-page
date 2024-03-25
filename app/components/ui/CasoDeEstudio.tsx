@@ -58,7 +58,7 @@ export const CasoDeEstudio = () => {
             <a className={clsx(worksans.className, "text-blue underline hover:text-white w-fit")} target="_blank" href="https://ciudaddemessina.com/">Visitar página</a>
           </MotionDiv>
           <MotionDiv
-            className="flex gap-2 lg:gap-8"
+            className=""
             variants={variantsImg}
             whileInView="animation"
             initial="initial"
