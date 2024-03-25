@@ -53,8 +53,6 @@ export const CasoDeEstudio = () => {
             <div className="mb-5 mt-8 lg:mt-5">
               <p className={clsx(worksans.className, "text-coldgray text-base")}>
               Transformamos una página web de nivel básico hecha con Wordpress en una de primera clase! Comenzamos realizando un diseño moderno e impactante que cumpla con sus necesidades y las de sus clientes potenciales, luego realizamos un profundo análisis SEO internacional, asegurándonos de que la misma pueda posicionarse en el exterior.
-              <br /><br />
-              El resultado es una página web sofisticada y atractiva que destaca entre todas. Con notatables mejordas en su generacion de ventas, seguridad, posicionamiento en buscadores, diseño, velocidad de carga y utilidad.
               </p>
             </div>
             <a className={clsx(worksans.className, "text-blue underline hover:text-white w-fit")} target="_blank" href="https://ciudaddemessina.com/">Visitar página</a>
@@ -66,11 +64,8 @@ export const CasoDeEstudio = () => {
             initial="initial"
             viewport={{ once: true }}
           >
-            <a target="_blank" href="https://ciudaddemessina.com/">            
-              <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/new-home.png" width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web" />
-            </a>
-            <a target="_blank" href="https://ciudaddemessina.com/">
-              <Image className="w-[42vw] max-w-[181px] lg:w-[20vw] lg:max-w-[323px]" src="/img/new-home2.png" width={323} height={529} alt="ciudad de messina fabrica de escobillones home pagina web anterior" />
+            <a target="_blank" className="flex flex-col justify-center align-middle" href="https://ciudaddemessina.com/">            
+              <Image className="w-full" src="/img/ciudad-de-messina.png" width={498} height={296} alt="ciudad de messina fabrica de escobillones home pagina web" />
             </a>
           </MotionDiv>
         </div>

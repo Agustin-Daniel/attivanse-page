@@ -8,43 +8,23 @@ import { Autoplay } from 'swiper/modules';
 
 const cards = [
     {
+        title: "Posicionamiento Internacional",
+        description: "Vende más posicionándote en los buscadores del exterior en varios idiomas.",
+        // image: "image"
+    },
+    {
+        title: "Ultra Rápido",
+        description: "Nuestras paginas web cargan al instante en todos los paises del mundo.",
+        // image: "image"
+    }, 
+    {
         title: "Diseño de Primer Orden",
         description: "Atraiga más clientes con un hermoso sitio web que siga los valores de su marca.",
         // image: "image"
     },
     {
-        title: "Posicionamiento Internacional",
-        description: "Cierre ventas en el exterior siendo visible en todos los buscadores del mundo.",
-        // image: "image"
-    },
-    {
-        title: "Todo es Programable",
-        description: "Todo lo que mostramos es apenas un poco de lo que podesmos hacer, el cielo es el limite.",
-        // image: "image"
-    },
-    {
-        title: "Seguridad ante Todo",
-        description: "Impida ataques de DOSS, spam y de haking con nuestra arquitectura.",
-        // image: "image"
-    },
-    {
-        title: "Venda mas Rapido",
-        description: "Agilice las ventas de sus productos con un sistema de venta personalizado.",
-        // image: "image"
-    },
-    {
-        title: "Presupuestos a un Click",
-        description: "Emita presupuestos de manera automática directamente desde su web.",
-        // image: "image"
-    },
-    {
-        title: "Blogs Personalizados",
-        description: "Genere valor agregado a su marca con un blog totalmente personalizado.",
-        // image: "image"
-    },
-    {
         title: "Sofware a Medida",
-        description: "Podemos crear literalmente LO QUE SEA, hasta si lo desea una pagina como Netflix.",
+        description: "Podemos crear literalmente lo que sea, aplicaciones de control de stock, de personal, etc.",
         // image: "image"
     }, 
 ]
