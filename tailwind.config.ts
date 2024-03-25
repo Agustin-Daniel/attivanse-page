@@ -57,6 +57,7 @@ const config: Config = {
           'header-img-480': "url('/img/header-480.png')",
           'contact-mobile': "url('/img/contact-mobile.png')",
           'contact-deskop': "url('/img/contact-deskop.png')",
+          'logo-cyan': "url('/img/logo-xyan.png')",
           'icon': 'linear-gradient(141deg, #2970EC 38.52%, #141D2E 95.64%);'
       },
       gridTemplateColumns: {

@@ -13,7 +13,7 @@ const cards = [
         // image: "image"
     },
     {
-        title: "Ultra Rápido",
+        title: "Sitio Web Ultra Rápido",
         description: "Nuestras paginas web cargan al instante en todos los paises del mundo.",
         // image: "image"
     }, 

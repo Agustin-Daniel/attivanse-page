@@ -33,8 +33,8 @@ export const Footer = () => {
             <ul className="flex flex-col gap-4">
               <li className="text-sm font-normal"><Link href="/#servicios">Servicios</Link></li>
               <li className="text-sm font-normal"><Link href="/addons-integrations">Addons</Link></li>
-              <li className="text-sm font-normal"><Link href="/#metodologia">Metodología</Link></li>
-              <li className="text-sm font-normal"><Link href="/#precios">Precios</Link></li>
+              <li className="text-sm font-normal"><Link href="/#beneficios">Beneficios</Link></li>
+              <li className="text-sm font-normal"><Link href="/#tecnologia">Tecnologia</Link></li>
               <li className="text-sm font-normal"><Link href="/#contacto">Contacto</Link></li>
             </ul>
           </section>
@@ -42,8 +42,8 @@ export const Footer = () => {
           <section className="flex flex-col gap-2">
             <h3 className="text-base font-medium">Redes Sociales</h3>
             <ul className="flex gap-2">
-              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/lin-icon.png"  alt="linkedin icon" width={32} height={32} /></a></li>
-              <li className="text-sm font-normal"><a href="#"><Image src="/img/icons/instagram-icon.png"  alt="instagram icon" width={32} height={32} /></a></li>
+              <li className="text-sm font-normal"><a target="_blank" href="https://www.linkedin.com/company/attivanse"><Image src="/img/icons/lin-icon.png"  alt="linkedin icon" width={32} height={32} /></a></li>
+              <li className="text-sm font-normal"><a target="_blank" href="https://www.instagram.com/attivanse/"><Image src="/img/icons/instagram-icon.png"  alt="instagram icon" width={32} height={32} /></a></li>
             </ul>
           </section>
 

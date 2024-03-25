@@ -19,8 +19,8 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 
       const links = [
         { href: "/addons-integrations", text: "Addons", link: true },
-        { href: "/#metodologia", text: "Metodología", link: false },
-        { href: "/#precios", text: "Precios", link: false },
+        { href: "/#beneficios", text: "Beneficios", link: false },
+        { href: "/#tecnologia", text: "Tecnologia", link: false },
         { href: "/#contacto", text: "Contacto", link: false },
       ];
 

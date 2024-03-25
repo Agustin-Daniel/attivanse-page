@@ -38,11 +38,6 @@ export const FAQ = () => {
 			content:
 				"Recibirá soporte técnico ilimitado! Siempre que necesite ayuda, puede comunicarse con nosotros por mail y lo ayudaremos con cualquier problema que tenga.",
 		},
-		{
-			title: "¿Los sitios web de Attivanse cumplen con la ADA?",
-			content:
-				"Si, todos los sitios web de Attivanse cumplen con la ADA. Si desea llevarlo al siguiente nivel puede adquirir el addon ADA Protection por $49* mensuales. Este addon incluye un widget de accesibilidad y un botón interactivo de accesibilidad en su sitio web.",
-		},
 	];
 
 	return (

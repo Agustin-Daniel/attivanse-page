@@ -36,7 +36,7 @@ export const CasoDeEstudio = () => {
     <div className="bg-lightblack px-6 py-12 lg:pl-32 lg:pr-16 lg:pt-16 lg:pb-24">
       <h2 className="mb-12 lg:mb-20 text-center">Caso de estudio</h2>
       <div>
-        <div className="flex flex-col max-w-[380px] gap-10 m-auto lg:flex-row lg:justify-between lg:gap-0 lg:max-w-[1200px]">
+        <div className="flex flex-col max-w-[380px] gap-10 m-auto lg:flex-row lg:justify-between lg:gap-0 lg:max-w-[1100px]">
           <MotionDiv
             className="flex flex-col text-left lg:w-[407px]"
             variants={variantsText}
@@ -45,12 +45,7 @@ export const CasoDeEstudio = () => {
             viewport={{ once: true }}
           >
             <h4 className="mb-4 text-xl text-center font-semibold lg:mb-1 lg:text-left lg:text-[38px] lg:leading-normal">Ciudad de Messina</h4>
-            <div className="flex flex-wrap gap-x-1 gap-y-2">
-              <SemiCustomDesing />
-              <PageContentWriting />
-              <HyperlocalWebsite />
-            </div>
-            <div className="mb-5 mt-8 lg:mt-5">
+            <div className="mb-5 mt-2 lg:mt-1">
               <p className={clsx(worksans.className, "text-coldgray text-base")}>
               Transformamos una página web de nivel básico hecha con Wordpress en una de primera clase! Comenzamos realizando un diseño moderno e impactante que cumpla con sus necesidades y las de sus clientes potenciales, luego realizamos un profundo análisis SEO internacional, asegurándonos de que la misma pueda posicionarse en el exterior.
               </p>

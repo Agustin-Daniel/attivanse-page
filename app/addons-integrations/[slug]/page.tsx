@@ -109,7 +109,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </section>
             <div className="flex mt-16 items-center border-b-2 border-gray-100 mb-5"></div>
               <div className="flex items-center justify-between flex-wrap gap-y-1">
-                <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-xl h-fit clamp')}>{`${addon?.price === "Free" ? "¡Gratis!" : addon?.price }${addon?.monthly ? "/mes" : ""}`}</span>
+                {/* <span className={clsx(worksans.className, 'leading-normal text-lightwhite font-medium text-xl h-fit clamp')}>{`${addon?.price === "Free" ? "¡Gratis!" : addon?.price }${addon?.monthly ? "/mes" : ""}`}</span> */}
                 <div className='flex'>
                   <a target="_blank" href={`https://api.whatsapp.com/send?phone=541144948334&text=Hola!%20%F0%9F%98%83%20me%20interesa%20su%20addon%20${addon?.title}%20`}><button className="flex w-max text-white border-[1px] border-blue hover:border-white bg-blue py-2 px-6 rounded hover:bg-white hover:text-black">Lo quiero!</button></a>
                   <a href="mailto:hello@attivanse.com?subject=CONSULTA%20WEB%20😃"><button className="flex ml-4 text-white border-[1px] py-2 px-6 rounded hover:bg-white hover:text-black">Hablemos</button></a>
