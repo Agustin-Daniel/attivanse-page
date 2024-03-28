@@ -14,8 +14,8 @@ export default function Home() {
 		<>
 			<Header />
 			<Servicios />
-			<Benefecios />
-			<Tools />
+			{/* <Benefecios /> */}
+			{/* <Tools /> */}
 			{/* <Metodologia /> */}
 			<CasoDeEstudio />
 			{/* <Pricing /> */}
