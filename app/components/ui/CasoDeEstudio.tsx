@@ -60,7 +60,7 @@ export const CasoDeEstudio = () => {
             viewport={{ once: true }}
           >
             <a target="_blank" className="flex flex-col justify-center align-middle" href="https://ciudaddemessina.com/">            
-              <Image className="w-full" src="/img/ciudad-de-messina.png" width={498} height={296} alt="ciudad de messina fabrica de escobillones home pagina web" />
+              <Image className="w-full" src="/img/ciudad-de-messina.webp" quality={100} width={498} height={296} alt="ciudad de messina fabrica de escobillones home pagina web" />
             </a>
           </MotionDiv>
         </div>

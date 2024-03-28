@@ -17,7 +17,7 @@ export const Servicios = () => {
         "Revisiones sin compromiso",
       ],
       revert: false,
-      img: "/img/service-design.png",
+      img: "/img/service-design.webp",
     },
     {
       icon: <CodeSVG />,
@@ -30,7 +30,7 @@ export const Servicios = () => {
         "Seguridad de CloudFlare",
       ],
       revert: true,
-      img: "/img/service-technology.png",
+      img: "/img/service-technology.webp",
     },
     {
       icon: <AddonsSVG />,
@@ -43,7 +43,7 @@ export const Servicios = () => {
         "Diseño de logos y branding",
       ],
       revert: false,
-      img: "/img/service-addons.png",
+      img: "/img/service-addons.webp",
     },
     {
       icon: <MegaphoneSVG />,
@@ -56,7 +56,7 @@ export const Servicios = () => {
         "Formularios de contacto, CTA y más",
       ],
       revert: true,
-      img: "/img/service-marketing.png",
+      img: "/img/service-marketing.webp",
     }
   ]
 

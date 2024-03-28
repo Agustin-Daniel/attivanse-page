@@ -54,7 +54,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
           initial="initial"
           viewport={{ once: true }}
         >
-          <Image src={img} width={606} height={502} alt="design image" />
+          <Image src={img} quality={100} width={606} height={502} alt="design image" />
         </MotionDiv>
         <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:max-w-[378px] text-pretty">
           <MotionP
@@ -108,7 +108,7 @@ export const ServiciosCard: React.FC<Prop> = ({ icon, title, description, list, 
         initial="initial"
         viewport={{ once: true }}
       >
-        <Image src={img} width={606} height={502} alt="technology image" />
+        <Image src={img} quality={100} width={606} height={502} alt="technology image" />
       </MotionDiv>
       <div className="w-full max-w-[301px] flex flex-col lg:self-start lg:justify-self-end lg:max-w-[378px]">
         <MotionP

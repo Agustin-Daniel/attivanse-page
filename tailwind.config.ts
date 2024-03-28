@@ -54,7 +54,7 @@ const config: Config = {
       backgroundImage: {
           'header-img-1920': "url('/img/header-1920.png')",
           'header-img-768': "url('/img/header-768.png')",
-          'header-img-480': "url('/img/header-480.png')",
+          'header-img-480': "url('/img/header-480.webp')",
           'contact-mobile': "url('/img/contact-mobile.png')",
           'contact-deskop': "url('/img/contact-deskop.png')",
           'logo-cyan': "url('/img/logo-xyan.png')",
