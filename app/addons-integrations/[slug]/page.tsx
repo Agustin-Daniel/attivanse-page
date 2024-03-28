@@ -20,6 +20,7 @@ export const dynamicParams = false
 
 export async function generateMetadata({params: {slug}}: {params: {slug: string}}) {
   const addon = getAddonBySlug(slug);
+  
 
 
   const description = addon?.description ? truncateText(addon?.description, 100) : "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas.Expertos en SEO, creamos soluciones digitales personalizadas para impulsar tu visibilidad online, aumentar la productividad y fortalecer tu presencia en el mercado. ¡Descubre cómo optimizar tu presencia digital con nosotros!";
@@ -51,9 +52,25 @@ export async function generateMetadata({params: {slug}}: {params: {slug: string}
 export default function Page({ params }: { params: { slug: string } }) {
     
     const addon = getAddonBySlug(params.slug);
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: addon?.title,
+      image: addon?.image,
+      description: addon?.description,
+      brand: {
+        '@type': 'Brand',
+        name: 'Attivanse',
+      },
+    }
     
 	return (
       <section className="overflow-hidden">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="container px-5 py-24 mx-auto flex flex-col items-center">
               <h2 className="text-sm tracking-widest text-[#FEBD29]">PREMIUM ADDON</h2>
               <h1 className="">{addon?.title}</h1>

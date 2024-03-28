@@ -26,6 +26,25 @@ export const metadata: Metadata = {
 	  ],
 	  type: 'website',
 	},
+  
+  }
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "image": "https://attivanse.com/img/attivanse-og.png",
+    "url": "https://attivanse.com/",
+    "logo": "https://attivanse.com/img/attivanse-blue-logo.png",
+    "name": "Attivanse",
+    "description": "Potencia el rendimiento de tu empresa con nuestro servicio de diseño web y desarrollo de aplicaciones para industrias y fábricas",
+    "email": "hello@attivanse.com",
+    "telephone": "+54-11-44948334",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Argentina",
+      "addressCountry": "AR",
+      "postalCode": "1886"
+    },
   }
 
 
@@ -38,6 +57,10 @@ export default function RootLayout({
     <html lang="en" className='text-white scroll-smooth'>
       <head>
         <meta name="theme-color" content="#2970EC" />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={manrope.className} style={{maxWidth: "1920px"}}>
         <ScrollProvider>
