@@ -20,7 +20,7 @@ export default function Layout({
     <main className="flex justify-center z-20 bg-black">
     {
       isMobile ?
-      <div>
+      <div className="max-w-[1920px] w-full">
         {children}
       </div>
       :
