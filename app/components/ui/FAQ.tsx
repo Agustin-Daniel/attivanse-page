@@ -40,8 +40,18 @@ export const FAQ = () => {
 		},
 	];
 
+	const jsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: questions.map((question, index) => ({ '@type': 'Question', name: question.title, acceptedAnswer: { '@type': 'Answer', text: question.content } })),
+	  }
+
 	return (
 		<section id='FAQ' className="bg-black py-12 px-5 flex flex-col items-center lg:pt-20 lg:pb-24 lg:px-48">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
 			<h2>Respuestas a las preguntas importantes.</h2>
 			<Accordion className="flex flex-col gap-8 lg:gap-7 mt-10 w-full max-w-[880px] lg:mt-14" type="single" collapsible>
         {
