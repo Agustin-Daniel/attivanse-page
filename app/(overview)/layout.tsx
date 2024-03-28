@@ -18,37 +18,16 @@ export default function Layout({
 
   return (
     <main className="flex justify-center z-20 bg-black">
-    {
-      isMobile ?
-      <div className="max-w-[1920px] w-full">
+    <motion.div
+        key={isMobile.toString()}
+        variants={variants}
+        initial={isMobile ? "" : "hidden"}
+        animate={isMobile ? "" : "enter"}
+        transition={{ type: 'linear', duration: 0.5 }}
+        className="max-w-[1920px] w-full"
+    >
         {children}
-      </div>
-      :
-      <motion.div
-          key={isMobile.toString()}
-          variants={variants}
-          initial={"hidden"}
-          animate={"enter"}
-          transition={{ type: 'linear', duration: 0.5 }}
-          className="max-w-[1920px] w-full"
-      >
-          {children}
-      </motion.div>
-    }
+    </motion.div>
     </main>
   )
-  // return (
-  //   <main className="flex justify-center z-20 bg-black">
-  //   <motion.div
-  //       key={isMobile.toString()}
-  //       variants={variants}
-  //       initial={isMobile ? "" : "hidden"}
-  //       animate={isMobile ? "" : "enter"}
-  //       transition={{ type: 'linear', duration: 0.5 }}
-  //       className="max-w-[1920px] w-full"
-  //   >
-  //       {children}
-  //   </motion.div>
-  //   </main>
-  // )
 }
