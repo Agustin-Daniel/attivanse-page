@@ -59,6 +59,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       name: addon?.title,
       image: addon?.image,
       description: addon?.description,
+      agregateRating: { '@type': 'AggregateRating', ratingValue: 5, reviewCount: addon?.reviews },
       brand: {
         '@type': 'Brand',
         name: 'Attivanse',
